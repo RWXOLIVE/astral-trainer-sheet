@@ -1,0 +1,789 @@
+/* Make existing .dark-mode styles also apply to .theme-dark */
+.theme-dark { }
+.theme-dark .pfx-topbar,
+.theme-dark .pfx-panel,
+.theme-dark .pfx-body,
+.theme-dark .pfx-popup,
+.theme-dark .pfx-loading,
+.theme-dark .textbox,
+.theme-dark .footer,
+.theme-dark .linklist a,
+.theme-dark .utilichart,
+.theme-dark .dexentry,
+.theme-dark .tabbar .button,
+.theme-dark .nav .button,
+.theme-dark .pfx-topbar .button,
+.theme-dark .searchbox,
+.theme-dark .warning,
+.theme-dark .statbar span,
+.theme-dark .type,
+.theme-dark a.subtle,
+.theme-dark .minor,
+.theme-dark .bst { /* empty: just selector aliasing */ }
+
+p {
+  line-height: 130%;
+}
+h1 {
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+  font-size: 16pt;
+}
+
+.pfx-backbutton {
+  margin-top: 20px;
+}
+
+.ladderlist {
+  max-width: 240px;
+}
+.ladder {
+  padding: 0 15px 15px 15px;
+  max-width: 600px;
+}
+.ladder table {
+  margin: 0 auto;
+}
+.ladder table,
+.ladder td,
+.ladder th {
+  border-collapse: collapse;
+  border: 1px solid #bbbbbb;
+}
+.ladder td,
+th {
+  padding: 3px 5px;
+}
+.ladder th {
+  text-align: left;
+  font-size: 9pt;
+  background: #eeeeee;
+}
+
+.laddernav,
+.laddernav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.laddernav {
+  margin: 0 15px 15px 15px;
+}
+
+a.subtle {
+  text-decoration: none;
+}
+a.subtle:hover {
+  text-decoration: underline;
+}
+
+.laddernav .button {
+  display: block;
+  position: relative;
+  padding: 5px 10px;
+  margin: 0 0 -1px 0;
+  border-radius: 0;
+}
+.laddernav .button:hover {
+  z-index: 10;
+}
+.laddernav .button.nav-first {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.laddernav .button.nav-last {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* replay */
+
+.linklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.linklist a {
+  display: block;
+  margin: 2px 0px 8px 0px;
+  padding: 3px 7px 4px 7px;
+  border: 1px solid #bbccdd;
+  background: #f8fbfd;
+
+  border-radius: 4px;
+  text-decoration: none;
+  color: #336699;
+  text-shadow: #ffffff 0px -1px 0;
+  box-shadow: 1px 1px 1px #d5d5d5;
+  cursor: pointer;
+
+  overflow: hidden;
+  white-space: nowrap;
+}
+.linklist a small {
+  font-size: 9pt;
+  color: #6699cc;
+}
+.linklist a:hover {
+  border: 1px solid #8899aa;
+  background: #f1f4f9;
+  color: #224466;
+}
+
+.dark-mode .dexentry dt,
+.dark-mode .movetag,
+.dark-mode .type {
+  color: #cccccc !important;
+}
+
+.dark-mode .linklist a small,
+.dark-mode .minor,
+.dark-mode .bst,
+.dark-mode .dexentry .tier {
+  color: #aaaaaa !important;
+}
+
+.dark-mode .type {
+  background-color: #444 !important;
+  border-color: #666 !important;
+}
+
+.dark-mode .textbox::placeholder {
+  color: #888 !important;
+}
+
+.dark-mode .buttonbar .button,
+.dark-mode .searchbox {
+  background: #2a2a2a !important;
+  color: #e0e0e0 !important;
+  border-color: #444 !important;
+}
+
+.dark-mode .dexentry,
+.dark-mode .dexentry h1,
+.dark-mode .dexentry h2,
+.dark-mode .dexentry dt,
+.dark-mode .dexentry dd {
+  background-color: transparent !important;
+  color: #ccc !important;
+}
+
+.dark-mode .dexentry .tier,
+.dark-mode .type,
+.dark-mode .utilichart a {
+  background-color: #333 !important;
+  border-color: #666 !important;
+  color: #eee !important;
+  text-shadow: none !important;
+}
+
+.dark-mode .utilichart a.active,
+.dark-mode .utilichart a.sel,
+.dark-mode .utilichart a.cur {
+  background-color: #444 !important;
+  border-color: #888 !important;
+}
+.dark-mode .warning {
+  background-color: #3a2a2a !important;
+  border-color: #ff9800 !important;
+  color: #fbc02d !important;
+}
+.dark-mode .pfx-topbar {
+  background: #1e1e1e !important;
+  background-image: none !important;
+  border-bottom: 1px solid #333 !important;
+  text-shadow: none !important;
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .pfx-topbar .userbar,
+.dark-mode .pfx-topbar .header {
+  color: #e0e0e0 !important;
+}
+
+.dark-mode .pfx-topbar a {
+  color: #90caf9 !important;
+}
+.dark-mode .pfx-topbar a:hover {
+  color: #e3f2fd !important;
+}
+.dark-mode .nav .button,
+.dark-mode .pfx-topbar .button,
+.dark-mode .tabbar .button {
+  background: #1e1e1e !important;
+  color: #ccc !important;
+  border: 1px solid #333 !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+.dark-mode .nav .button:hover,
+.dark-mode .tabbar .button:hover,
+.dark-mode .pfx-topbar .button:hover {
+  background: #2a2a2a !important;
+  border-color: #555 !important;
+  color: #fff !important;
+}
+
+.dark-mode .nav li:first-child .button,
+.dark-mode .nav li:last-child .button {
+  border-radius: 5px !important;
+}
+.dark-mode {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Restore original dark mode surfaces */
+.dark-mode .pfx-topbar {
+  background-color: #1e1e1e !important;
+  background-image: none !important;
+  border-bottom: 1px solid #333 !important;
+  text-shadow: none !important;
+}
+
+.dark-mode .pfx-panel,
+.dark-mode .pfx-body,
+.dark-mode .pfx-popup,
+.dark-mode .pfx-loading,
+.dark-mode .textbox,
+.dark-mode .footer,
+.dark-mode .linklist a {
+  background-color: #1e1e1e !important;
+  border-color: #444 !important;
+}
+
+.dark-mode .textbox,
+.dark-mode .textbox:focus {
+  color: #ffffff !important;
+}
+
+/* Buttons: revert back while improving text */
+.dark-mode .button,
+.dark-mode .nav .button,
+.dark-mode .tabbar .button {
+  background-color: #2a2a2a !important;
+  color: #eeeeee !important;
+  border-color: #555 !important;
+}
+
+.dark-mode .button:hover {
+  background-color: #3a3a3a !important;
+  color: #ffffff !important;
+}
+
+/* Utility panels */
+.dark-mode .utilichart,
+.dark-mode .dexentry {
+  background-color: #1e1e1e !important;
+}
+
+/* Highlight sections */
+.dark-mode .tier,
+.dark-mode .type,
+.dark-mode .movetag {
+  background-color: #2c2c2c !important;
+  border-color: #555 !important;
+  color: #f5f5f5 !important;
+}
+
+/* Minor text */
+.dark-mode .minor,
+.dark-mode .bst,
+.dark-mode .dexentry small,
+.dark-mode small {
+  color: #bbbbbb !important;
+}
+
+/* ===== Dark mode – minimal, targeted fixes ===== */
+
+/* Search + Sort bar contrast (keeps them readable but unobtrusive) */
+.dark-mode .searchbox {
+  background: #1b1b1b !important;
+  color: #eaeaea !important;
+  border: 1px solid #565656 !important;
+}
+.dark-mode .searchbox::placeholder { color: #8f8f8f !important; }
+
+/* "Sort:" header row and column labels */
+.dark-mode .utilichart .content,
+.dark-mode .utilichart .content * {
+  /* don't change colors globally here */
+}
+.dark-mode .utilichart .content .header,
+.dark-mode .utilichart .content .sort,
+.dark-mode .utilichart table thead th {
+  background: #2a2a2a !important;
+  color: #ffffff !important;
+  border-color: #565656 !important;
+}
+
+/* Encounter rows (Pokemon list) */
+.dark-mode .utilichart a {
+  background: #1a1a1a !important;
+  border: 1px solid #404040 !important;
+  color: #f0f0f0 !important;
+}
+.dark-mode .utilichart a:hover {
+  background: #232323 !important;
+  border-color: #6f6f6f !important;
+}
+
+/* Encounter section headings: Land / Surfing / Fishing */
+.dark-mode .utilichart h3,
+.dark-mode .utilichart dt {
+  background: #202020 !important;
+  color: #ffffff !important;
+  border: 1px solid #3f3f3f !important;
+  padding: 4px 8px !important;
+  border-radius: 4px !important;
+}
+
+/* Level-up section title bar and table cells */
+.dark-mode .dexentry h2,
+.dark-mode .dexentry .movestitle {
+  background: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #565656 !important;
+}
+
+.dark-mode .dexentry table td,
+.dark-mode .dexentry table th,
+.dark-mode .dexentry dt,
+.dark-mode .dexentry dd,
+.dark-mode .dexentry .movetag {
+  color: #e6e6e6 !important;
+}
+
+/* Keep base stat bars exactly as they are in light mode (do NOT recolor) */
+.dark-mode .statbar span {
+  box-shadow: inherit !important;       /* keep original styling */
+  filter: none !important;              /* don't dim */
+}
+.dark-mode table.stats td,
+.dark-mode table.stats th { color: #e0e0e0 !important; }
+
+/* Type badges remain vivid on dark backgrounds */
+.dark-mode .type {
+  border-color: #666 !important;
+  text-shadow: none !important;
+}
+
+/* ===== Dark mode – text + selected-route fixes ===== */
+
+/* 1) Names/links: override "a.subtle" and inner links so they aren't black */
+.dark-mode a.subtle,
+.dark-mode .utilichart a a,
+.dark-mode .dexentry a.subtle {
+  color: #f0f0f0 !important;
+}
+.dark-mode a.subtle:hover,
+.dark-mode .utilichart a a:hover,
+.dark-mode .dexentry a.subtle:hover {
+  color: #ffffff !important;
+}
+
+/* 2) Make the text inside encounter rows readable */
+.dark-mode .utilichart a span,
+.dark-mode .utilichart a small {
+  color: #dedede !important;
+}
+
+/* 3) Move list (Level-up / Moves tabs) – brighten names and details */
+.dark-mode .dexentry table td,
+.dark-mode .dexentry table th,
+.dark-mode .dexentry dt,
+.dark-mode .dexentry dd,
+.dark-mode .dexentry .movetag {
+  color: #e8e8e8 !important;
+}
+
+/* 4) Selected Route pill/button in Encounters (was light-theme) */
+.dark-mode .utilichart .button.cur,
+.dark-mode .utilichart .button.cur:hover,
+.dark-mode .utilichart .label,
+.dark-mode .utilichart .label:hover {
+  background: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #666 !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/* Dark mode: fix selected route/location pill (and similar standalone buttons) */
+.dark-mode .pfx-body .button,
+.dark-mode .pfx-panel .button {
+  background: #2a2a2a !important;
+  color: #ffffff !important;
+  border: 1px solid #666 !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+.dark-mode .pfx-body .button.cur,
+.dark-mode .pfx-panel .button.cur,
+.dark-mode .pfx-body .button:disabled,
+.dark-mode .pfx-panel .button:disabled {
+  background: #3a3a3a !important;
+  color: #e6e6e6 !important;
+  border-color: #777 !important;
+}
+
+/* Keep tabbar/nav buttons unchanged */
+.dark-mode .tabbar .button,
+.dark-mode .nav .button {
+  /* let existing dark styles win; no overrides here */
+}
+
+/* Dark mode: keep the base-stat bars exactly like light mode */
+
+/* Only the table cells go transparent – not the inner spans */
+.dark-mode table.stats { background: transparent !important; }
+.dark-mode table.stats th,
+.dark-mode table.stats td { 
+  background: transparent !important; 
+  color: #e6e6e6 !important; 
+  border-color: #444 !important; 
+}
+
+/* Dark mode: make standalone buttons readable (incl. Toggle Dark Mode) */
+.dark-mode .button:not(.nav .button):not(.tabbar .button) {
+  background: #2b2b2b !important;
+  color: #ffffff !important;
+  border: 1px solid #777 !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+.dark-mode .button:not(.nav .button):not(.tabbar .button):hover {
+  background: #3a3a3a !important;
+  border-color: #999 !important;
+}
+.dark-mode .button:not(.nav .button):not(.tabbar .button).cur,
+.dark-mode .button:not(.nav .button):not(.tabbar .button):disabled {
+  background: #3a3a3a !important;
+  color: #e6e6e6 !important;
+  border-color: #888 !important;
+}
+
+/* Dark mode: fix the white side panels (gutter scrollers) */
+.dark-mode .pfx-go-left,
+.dark-mode .pfx-go-right {
+  background: #121212 !important;   /* kill the white + image */
+  border-left: 1px solid #333 !important;
+}
+
+/* Optional: if you want subtle arrows, keep images but darken bg */
+/*
+.dark-mode .pfx-go-left  { background: #1a1a1a url(go-left.png)  no-repeat left 20px center !important; }
+.dark-mode .pfx-go-right { background: #1a1a1a url(go-right.png) no-repeat right 20px center !important; }
+*/
+
+/* Make sure the main surfaces are dark too */
+.dark-mode .pfx-panel,
+.dark-mode .pfx-body {
+  background: #1a1a1a !important;
+}
+
+.theme-picker { position: fixed; top: 10px; right: 10px; }
+
+/* Theme dropdown control */
+.theme-picker select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 6px 28px 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  background: #f5f5f5;
+  color: #222;
+  font: inherit;
+}
+.dark-mode .theme-picker select,
+.theme-azure .theme-picker select {
+  background: #2a2a2a;
+  color: #fff;
+  border-color: #666;
+}
+
+/* =======================
+   Azure (Night Blue) theme
+   ======================= */
+.theme-azure {
+  /* base canvas stays your dark bg from .dark-mode */
+}
+
+/* Top bar + tabs with blue accent */
+.theme-azure .pfx-topbar {
+  background: #0f172a !important;                /* deep navy */
+  border-bottom-color: #223b78 !important;
+}
+.theme-azure .nav .button,
+.theme-azure .tabbar .button,
+.theme-azure .pfx-topbar .button {
+  background: #111827 !important;
+  border-color: #223b78 !important;
+  color: #e5e9f5 !important;
+}
+.theme-azure .nav .button:hover,
+.theme-azure .tabbar .button:hover,
+.theme-azure .pfx-topbar .button:hover {
+  background: #16223a !important;
+  border-color: #3b82f6 !important;              /* bright blue edge */
+  color: #ffffff !important;
+}
+
+/* Primary accents (links, active labels, small pills) */
+.theme-azure a,
+.theme-azure .pfx-topbar a {
+  color: #8ab4ff !important;                     /* lighter blue */
+}
+.theme-azure a:hover,
+.theme-azure .pfx-topbar a:hover {
+  color: #cde1ff !important;
+}
+
+/* Search box focus, input focus rings */
+.theme-azure .textbox:focus,
+.theme-azure .searchbox:focus {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 2px rgba(59,130,246,.25) !important;
+}
+
+/* Section headers (e.g., Level-up title bar, Encounter headers) */
+.theme-azure .dexentry h2,
+.theme-azure .dexentry .movestitle,
+.theme-azure .utilichart h3,
+.theme-azure .utilichart dt {
+  background: #0b1226 !important;
+  border-color: #274d9b !important;
+  color: #e8f0ff !important;
+}
+
+/* Buttons inside content area (e.g., route pill, standalone buttons) */
+.theme-azure .pfx-body .button,
+.theme-azure .pfx-panel .button,
+.theme-azure .utilichart .button {
+  background: #0f1a33 !important;
+  border-color: #274d9b !important;
+  color: #e8f0ff !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+.theme-azure .pfx-body .button:hover,
+.theme-azure .pfx-panel .button:hover,
+.theme-azure .utilichart .button:hover {
+  background: #132247 !important;
+  border-color: #3b82f6 !important;
+}
+.theme-azure .pfx-body .button.cur,
+.theme-azure .pfx-panel .button.cur,
+.theme-azure .pfx-body .button:disabled,
+.theme-azure .pfx-panel .button:disabled {
+  background: #172a57 !important;
+  color: #cfe1ff !important;
+  border-color: #3b82f6 !important;
+}
+
+/* Encounter rows – subtle blue outline on hover */
+.theme-azure .utilichart a:hover {
+  border-color: #3b82f6 !important;
+}
+
+/* Side gutters (scrollers) */
+.theme-azure .pfx-go-left,
+.theme-azure .pfx-go-right {
+  background: #0b1220 !important;
+  border-left-color: #274d9b !important;
+}
+
+/* ===== Night (Blue) — standalone base ===== */
+.theme-azure {
+  background: #0b1220;           /* page canvas */
+  color: #e8f0ff;
+}
+
+.theme-azure .pfx-panel,
+.theme-azure .pfx-body,
+.theme-azure .utilichart,
+.theme-azure .dexentry,
+.theme-azure .linklist a,
+.theme-azure .textbox {
+  background: #0f172a !important;
+  color: #e8f0ff !important;
+  border-color: #274d9b !important;
+}
+
+/* Topbar & nav */
+.theme-azure .pfx-topbar { background: #0b1226 !important; border-bottom: 1px solid #274d9b !important; }
+.theme-azure .nav .button,
+.theme-azure .tabbar .button,
+.theme-azure .pfx-topbar .button {
+  background: #111827 !important;
+  color: #e5e9f5 !important;
+  border-color: #274d9b !important;
+}
+.theme-azure .nav .button:hover,
+.theme-azure .tabbar .button:hover,
+.theme-azure .pfx-topbar .button:hover {
+  background: #132247 !important;
+  border-color: #3b82f6 !important;
+}
+
+/* Inputs */
+.theme-azure .searchbox,
+.theme-azure .textbox { background: #0f1a33 !important; color: #e8f0ff !important; border-color: #274d9b !important; }
+.theme-azure .searchbox::placeholder { color: #9db5ff !important; }
+.theme-azure .textbox:focus, .theme-azure .searchbox:focus {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 2px rgba(59,130,246,.25) !important;
+}
+
+/* Section headers / pills */
+.theme-azure .dexentry h2,
+.theme-azure .utilichart h3,
+.theme-azure .utilichart dt {
+  background: #0b1226 !important; color: #e8f0ff !important; border-color: #274d9b !important;
+}
+.theme-azure .pfx-body .button,
+.theme-azure .pfx-panel .button,
+.theme-azure .utilichart .button {
+  background: #0f1a33 !important; color: #e8f0ff !important; border-color: #274d9b !important; text-shadow: none !important; box-shadow: none !important;
+}
+.theme-azure .pfx-body .button:hover,
+.theme-azure .pfx-panel .button:hover,
+.theme-azure .utilichart .button:hover {
+  background: #132247 !important; border-color: #3b82f6 !important;
+}
+
+/* Encounter row hover */
+.theme-azure .utilichart a { background: #0f172a !important; border-color: #274d9b !important; color: #e8f0ff !important; }
+.theme-azure .utilichart a:hover { border-color: #3b82f6 !important; }
+
+/* Side gutters */
+.theme-azure .pfx-go-left, .theme-azure .pfx-go-right {
+  background: #0b1220 !important; border-left-color: #274d9b !important;
+}
+
+/* Keep base-stat bars exactly as light mode (no recolor) */
+.theme-azure .statbar span { box-shadow: inherit; } /* no background override */
+
+/* ===== Azure theme: text visibility fixes ===== */
+
+/* Make all regular text light by default */
+.theme-azure,
+.theme-azure body,
+.theme-azure .pfx-panel,
+.theme-azure .pfx-body {
+  color: #e8f0ff !important;
+}
+
+/* Links used for names (these are black in light theme) */
+.theme-azure a.subtle,
+.theme-azure .utilichart a a,
+.theme-azure .dexentry a.subtle {
+  color: #e8f0ff !important;
+}
+.theme-azure a.subtle:hover,
+.theme-azure .utilichart a a:hover,
+.theme-azure .dexentry a.subtle:hover {
+  color: #ffffff !important;
+}
+
+/* Sort header + column headers in the list */
+.theme-azure .utilichart .content .header,
+.theme-azure .utilichart .content .sort,
+.theme-azure .utilichart table thead th {
+  color: #e8f0ff !important;
+  background: #0b1226 !important;
+  border-color: #274d9b !important;
+}
+
+/* Encounter rows: text inside each row */
+.theme-azure .utilichart a,
+.theme-azure .utilichart a span,
+.theme-azure .utilichart a small {
+  color: #e8f0ff !important;
+}
+
+/* Search input + placeholder */
+.theme-azure .searchbox,
+.theme-azure .textbox {
+  color: #e8f0ff !important;
+}
+.theme-azure .searchbox::placeholder,
+.theme-azure .textbox::placeholder {
+  color: #9db5ff !important;
+}
+
+/* Tabs/pills (ensure their label text is not dark) */
+.theme-azure .tabbar .button,
+.theme-azure .pfx-body .button,
+.theme-azure .pfx-panel .button {
+  color: #e8f0ff !important;
+}
+
+/* ===== Brighter, crisper text for DARK (not Night/Azure) ===== */
+
+/* Base copy */
+.dark-mode .pfx-body,
+.dark-mode .pfx-panel,
+.dark-mode .dexentry,
+.dark-mode .utilichart,
+.dark-mode .linklist a {
+  color: #e6ecf8 !important;            /* brighter body text */
+}
+
+/* Headings & labels (HP / Attack etc. and dt labels) */
+.dark-mode h1, .dark-mode h2, .dark-mode h3,
+.dark-mode .dexentry dt,
+.dark-mode .utilichart h3,
+.dark-mode .utilichart dt {
+  color: #f1f5ff !important;             /* near-white headings */
+}
+
+/* Links (names, evolution chain, subtle links) */
+.dark-mode a,
+.dark-mode a.subtle,
+.dark-mode .utilichart a a,
+.dark-mode .dexentry a.subtle {
+  color: #9ecbff !important;             /* blue accent like Night */
+}
+.dark-mode a:hover,
+.dark-mode a.subtle:hover,
+.dark-mode .utilichart a a:hover,
+.dark-mode .dexentry a.subtle:hover {
+  color: #cfe1ff !important;
+}
+
+/* Sort header / table headers in list */
+.dark-mode .utilichart .content .header,
+.dark-mode .utilichart .content .sort,
+.dark-mode .utilichart table thead th {
+  color: #eef4ff !important;
+  background: #20283a !important;
+  border-color: #5b6b8a !important;
+}
+
+/* Search input + placeholder */
+.dark-mode .searchbox,
+.dark-mode .textbox {
+  color: #eaf0ff !important;
+}
+.dark-mode .searchbox::placeholder,
+.dark-mode .textbox::placeholder {
+  color: #a8b7d1 !important;
+}
+
+/* Buttons in content (labels/pills) — brighter text only */
+.dark-mode .pfx-body .button,
+.dark-mode .pfx-panel .button {
+  color: #eaf0ff !important;
+}
+
+/* IMPORTANT: keep stat bars untouched */
+.dark-mode .statbar span {
+  /* no background/width/filter overrides here */
+  box-shadow: inherit;                    /* preserve light-mode look */
+}
+
