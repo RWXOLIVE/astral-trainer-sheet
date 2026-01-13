@@ -1,0 +1,1009 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Apply saved theme ASAP to avoid flash -->
+  <script>
+(() => {
+  const saved = localStorage.getItem('porydex-theme') || 'dark';
+  const root = document.documentElement;
+
+  root.classList.remove('dark-mode', 'theme-azure');
+
+  if (saved === 'dark') {
+    root.classList.add('dark-mode');
+  } else if (saved === 'azure') {
+    root.classList.add('dark-mode', 'theme-azure');
+  }
+})();
+</script>
+
+
+    <meta charset="utf-8" />
+    <!--<link rel="icon" type="image/ico" href="images/favicon.ico">-->
+    <link rel="icon" type="image/gif" href="images/tepig.gif"  >
+    <title>Astral Sheet - Pok&eacute;mon Showdown Dex</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8" />
+    <link
+      rel="stylesheet"
+      href="https://play.pokemonshowdown.com/style/font-awesome.css"
+    />
+    <link rel="stylesheet" href="theme/panels.css" />
+    <link rel="stylesheet" href="theme/main.css" />
+    <link rel="stylesheet" href="theme/trainer_sheet.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://play.pokemonshowdown.com/style/utilichart.css?b359"
+    />
+    <link rel="stylesheet" href="../theme/pokedex.css?b359" />
+
+    <!-- Workarounds for IE bugs to display trees correctly. -->
+    <!--[if lte IE 6
+      ]><style>
+        li.tree {
+          height: 1px;
+        }
+      </style><!
+    [endif]-->
+    <!--[if IE 7
+      ]><style>
+        li.tree {
+          zoom: 1;
+        }
+      </style><!
+    [endif]-->
+  </head>
+  <body>
+    <div class="pfx-topbar">
+		<div class="header">
+			<ul class="nav">
+				<li><a class="button nav-first" href="https://github.com/lhearachel/porydex"><img src="images/pokemonshowdownbeta.png" alt="Pokémon Showdown! (beta)" />Github</a></li>
+				<li><a class="button" href="https://rwxolive.github.io/AstralDex/">Pokédex</a></li>
+				<li><a class="button" href="https://rwxolive.github.io/AstralCalc/">Calculator</a></li>
+				<li><a class="button" href="https://discord.gg/fZWBmEZeZx">Discord</a></li>
+        		<li><a class="button" href="https://drive.google.com/drive/folders/1X05r8shCeFDpyGCsSXXkryZ4Bt5pWd5B?usp=sharing">Google Drive</a></li>
+                <li><a class="button nav-last" href="resources.html" >Trainer Sheet</a></li>
+                <div class="theme-picker">
+                <label for="theme-select">Theme</label>
+                <select id="theme-select">
+                  <option value="light">Light</option>
+                  <option value="dark">Dark</option>
+                  <option value="azure">Night (Blue)</option>
+                </select>
+              </div>
+
+			</ul>
+			<!--<div style="clear:both"></div>-->
+		</div>
+	</div>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="resources.html">Home</a></li>
+        <li><a href="roxanne-brock_split.html">Roxanne/Brock (20)</a></li>
+        <li><a href="brawly_split.html">Brawly (25)</a></li>
+        <li><a href="norman_split.html">Norman (37)</a></li>
+        <li><a href="elesa_split.html">Elesa/Jasmine (44)</a></li>
+        <li><a href="juan_split.html">Flannery & Blaine (54)</a></li>
+        <li><a href="winona_split.html">Winona (73)</a></li>
+        <li><a href="tate_and_liza_split.html">Tate & Liza (90)</a></li>
+        <li><a href="flannery_split.html">Crasher Wake & Nessa (93)</a></li>
+        <li><a href="elite_four_split.html">Elite Four (99)</a></li>
+    </ul>
+    </div>
+    <div>
+      <div class="resources">
+        <h1>General Information [Ordered by game progression]</h1>
+      </div>
+      <div class="resources">
+        <h1>Littleroot Town - Default LVL 5 -</h1>
+        <p><b>Rod:</b> 20% Seel, 20% Ducklett, 15% Staryu, 15% Lotad, 10% Snorunt,
+        10% Vulpix-Alola, 10% Vanillite, 10% Omanyte</p>
+        <p><b>Water:</b> 60% Dewpider, 20% Oshawott, 20% Goomy
+        </p>
+        <p><b>NPC Items:</b> Hyper Candy, Infinite Repel, Super Rod, Dowsing Machine</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 101</h1>
+        <p>
+          <b>Land:</b> 20% Zigzagoon, 15% Fletchling, 15% Pikipek, 10% Starly,
+          10% Lechonk, 10% Smoliv, 10% Stufful, 5% Aipom, 5% Ekans
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Oldale Town</h1>
+        <p>
+          <b>Land:</b> 30% Vulpix, 20% Slugma, 20% Fletchling, 15% Numel, 10%
+          Houndour, 10% Salandit
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 103</h1>
+        <p>
+          <b>Land:</b> 20% Sewaddle, 15% Exeggcute, 15% Bounsweet, 10% Sunkern, 10%
+          Lotad, 10% Budew, 10% Hoppip, 5% Kricketot, 5% Ferroseed
+        </p>
+        </p>
+        <p><b>Rod:</b> 20% Seel, 20% Ducklett, 15% Staryu, 10% Kabuto,
+        10% Omanyte, 10% Buizel, 10% Chinchou, 5% Clamperl</p>
+        <p><b>Overworld Items (Post Norman):</b> Silver Powder, Heart Scale</p>
+        <p><b>Berry Trees (Post Norman):</b> 32 Cheri, 32 Leppa, 31 Persim</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 102</h1>
+        <p>
+          <b>Land:</b> 20% Pawmi, 15% Buneary, 15% Pancham, 15% Mankey, 11%
+          Baltoy, 10% Tyrogue, 10% Snubbull, 1% Abra
+        </p>
+        <p><b>Rod:</b> 20% Azurill, 20% Finneon, 10% Clamperl, 10% Corphish,
+        10% Psyduck, 10% Buizel, 10% Seel, 5% Barboach, 5% Shellder</p>
+        <p><b>Berry Trees:</b> 32 Oran, 32 Pecha</p>
+      </div>
+
+      <div class="resources">
+        <h1>Petalburg City</h1>
+        <p>
+          <b>Rod:</b> 20% Corphish, 20% Croagunk, 10% Psyduck, 10% Slowpoke-Galar, 10%
+          Finneon, 10% Buizel, 10% Azurill, 9% Horsea
+        </p>
+        <p><b>Water:</b> 30% Mudkip, 30% Sobble, 20% Squirtle, 10% Popplio, 10% Froakie
+        <p><b>Overworld Items:</b> Rare Candy (Requires Surf)</p>
+        <p><b>Mart:</b> Sun Stone, Deep Sea Scale, Deep Sea Tooth, Razor Fang,
+        Razor Claw, Dragon Scale (Requires 2nd Badge)</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 104</h1>
+        <p>
+          <b>Land:</b> 20% Pikipek, 15% Fletchling, 15% Ducklett, 10% Sewaddle, 10%
+          Grubbin, 10% Pidgey, 5% Mareep, 5% Swablu
+          <p><b>Rod:</b> 30% Corphish, 30% Poliwag, 20% Finneon, 10% Psyduck,
+        9% Shellder</p>
+        </p>
+        <p>
+          <b>NPC Items:</b> 250 Oran, 250 Chesto, 250 Cheri, 250 Pecha
+        <p><b>Overworld Items:</b> Hard Stone (Petalburg Forest exist), Sharpedonite
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Petalburg Woods</h1>
+        <p>
+          <b>Land:</b> 30% Combee, 10% Bellsprout, 10% NidoranM, 10% NidoranF, 10%
+          Toedscool, 10% Cherubi, 5% Ferroseed, 5% Weedle, 5% Caterpie, 5% Trapinch
+        </p>
+        <p><b>NPC Items:</b> 5 Quick Balls, Great Ball, TM Bulldoze, Miracle Seed (Requires Cut),
+        2 Berry Juices (Requires Cut)</p>
+      </div>
+
+      <div class="resources">
+        <h1>Dark Forest</h1>
+        <p>
+          <b>Land:</b> 30% Poochyena, 15% Baltoy, 15% Gligar, 15% Scraggy, 10%
+          Aipom, 10% Dunsparce, 4% Shroodle, 1% Abra
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Rustboro City</h1>
+        <p>
+          <b>Land:</b> 20% Dunsparce, 15% Chingling, 10% Meowth-Galar, 10% Drilbur,
+          10% Magnemite, 10% Mudbray, 10% Pidove, 5% Mudbray, 5% Dodui
+        </p>
+        <p>
+          <b>Delibird Deliveries:</b> Eviolite, TM Smack Down, TM Magical Leaf
+        </p>
+        <p><b>Overworld Items:</b> Heart Scale</p>
+        <p><b>Gym Leader Rewards (Roxanne):</b> TM Rock Tomb</p>
+        <p><b>Gym Leader Rewards (Brock):</b> TM Rock Tomb, Ability Capsule, New Encounter Location (Unnamed Island)</p>
+      </div>
+
+      <div class="resources">
+        <h1>
+          Route 116</h1>
+        <p>
+          <b>Land:</b> 20% Amaura, 20% Tyrunt, 15% Magnemite, 15%
+          Sandile, 10% Pawniard, 10% Rhyhorn, 5% Varoom, 5%
+          Meowth-Galar
+        </p>
+        <p><b>Overworld Items:</b> Berry Juice (Hidden), Rare Candy, Wise Glasses (Requires Rock Smash, Rusturf Exist)</p>
+        <p>
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 115</h1>
+        <p>
+          <b>Land (LVL 90):</b> 20% Electrode-Hisui, 15% Avalugg-Hisui, 15% Braviary-Hisui, 15% Lilligant-Hisui,
+          15% Sneasler, 10% Arcanine-Hisui, 10% Typhlosion-Hisui
+        </p>
+        <p><b>Rod:</b> 20% Tympole, 20% Shellder, 20% Kabuto, 20% Omanyte,
+        10% Poliwag, 5% Qwilfish, 5% Bruxish</p>
+        <p><b>Water (LVL 53):</b> 30% Lumineon, 30% Aerodactyl, 20% Crobat, 10% Frillish, 10% Jellicent
+        <p><b>Overworld Items:</b> Wide Lens, WIP</p>
+      </div>
+
+      <div class="resources">
+        <h1>Rusturf Tunnel</h1>
+        <p>
+          <b>Land:</b> 20% Geodude, 15% Zubat, 15% Woobat, 10% Geodude-Alola,
+          10% Swinub, 10% Onix, 10% Magnemite, 5% Sneasel, 5% Mawile
+        </p>
+        <p><b>Overworld Items:</b> Muscle Band, Nugget</p>
+      </div>
+
+      <div class="resources">
+        <h1>Verdantuf Town</h1>
+        <p>
+        <p><b>Overworld Items:</b> Black Glasses</p>
+      </div>
+
+      <div class="resources">
+        <h1>Dewford Town - Default LVL 15 -</h1>
+        <p>
+          <b>Land:</b> 30% Tyrogue, 10% Mienfoo, 10% Flamigo, 10% Machop,
+          10% Stufful, 10% Makuhita, 5% Tauros, 5% Tauros-Paldea-Combat, 5% Tauros-Paldea-Aqua,
+          5% Tauros-Paldea-Blaze
+        </p>
+        <p><b>NPC Items:</b> Silk Scarf, Moon Stone, Nugget, TR Sludge Bomb (Post Norman)</p>
+        <p><b>Delibird Deliveries:</b> 40 Sitrus Berries, 15 Great Balls, 15 Dive Balls</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 106</h1>
+        <p><b>Rod:</b> 30% Seel, 20% Krabby, 20% Tentacool, 20% Poliwag,
+        10% Tadbulb, 10% Corphish, 5% Arrokuda, 5% Chinchou</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 107</h1>
+        <p>
+          <b>Land:</b> 30% Wurmple, 20% Swadloon, 15% Grubbin, 10% Skorupi,
+          10% Trapinch, 5% Heracross, 5% Surskit, 5% Paras
+        </p>
+        <p><b>Rod:</b> 30% Corphish, 20% Tirtouga, 20% Corphish, 20% Qwilfish,
+        10% Skrelp, 10% Clauncher, 9% Qwilfish-Hisui</p>
+      </div>
+
+      <div class="resources">
+        <h1>Granite Cave 1F</h1>
+        <p>
+          <b>Land:</b> 20% Geodude-Alola, 15% Drilbur, 10%
+          Swinub, 10% Mudbray, 10% Sneasel, 10% Aron, 10% Impidimp,
+          5% NidoranM, 5% NidoranF, 5% Togedemaru, 1% Dunsparce
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Granite Cave B1F (Dewford Gym)</h1>
+        <p>
+          <b>Gym Leader Rewards: TR Drain Punch, 3 Stardusts, Punching Glove, TR Trailblaze,
+            TR Pounce, Ability Capsule
+          </b> 
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Granite Cave B1F</h1>
+        <p>
+          <b>Overworld Items: Everstone
+          </b> 
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Granite Cave Steven's Room</h1>
+        <p>
+          <b>Land:</b> 20% Chingling, 20% Woobat, 15% Zigzagoon (5-14), 15% Abra, 15%
+          Girafarig, 10% Psyduck, 10% Solosis
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 109</h1>
+        <p><b>Rod:</b> 20% Azurill, 20% Barboach, 10% Piplup, 10% Wiglett,
+        10% Tadbulb, 10% Binacle, 5% Seel, 5% Veluza</p>
+        <p><b>NPCs Items:</b> Soft Sand</p>
+        <p><b>Overworld Items:</b> Heart Scale, Lure (Hidden)</p>
+      </div>
+
+      <div class="resources">
+        <h1>Slateport City</h1>
+        <p>
+          <b>Rod:</b> 20% Binacle, 20% Clamperl, 10% Trubbish, 10% Carvanha, 10%
+          Clobbopus, 10% Seadra, 10% Krabby, 5% Tatsugiri
+        </p>
+        <p>
+          <b>Slateport Market:</b> TR Rock Tomb, TR Pounce, TR Trailblaze
+        </p>
+        <p>
+          <b>NPC Items:</b> TM Torment, TR Pounce, TR Trailblaze
+        </p>
+        <p>
+        <p>
+        <p><b>Overworld Items:</b> TM Hidden Power</p>
+      </div>
+      
+
+      <div class="resources">
+        <h1>Route 110</h1>
+        <p>
+          <b>Land:</b> 20% Girafarig, 10% Mienfoo, 10% Beedrill, 10% Klink, 10%
+          Mareep, 10% Exeggcute, 10% Tyrogue, 5% Rhyhorn, 5% Bellsprout
+        </p>
+        <p><b>Overworld Items (After Norman):</b> Rare Candy, Quick Ball</p>
+        <p><b>Berry Trees (After Norman):</b> 32 Aspear, 32 Oran, 9 Sitrus</p>
+      </div>
+
+      <div class="resources">
+        <h1>Starfall Cave - Default LVL 33 - </h1>
+        <p>
+          <b>Land:</b> 20% Krokorok, 10% Ursaring, 10% Cetoddle, 10% Baltoy, 10%
+          Mighyena, 10% Clefairy, 10% Kirlia, 5% Ralts, 5% Cleffa, 5% Staryu, 5% Pawniard
+        <p><b>Overworld Items:</b> Moon Stone, TR Night Shade</p>
+      </div>
+
+      <div class="resources">
+        <h1>Mauville City</h1>
+        <p>
+          <b>Gym Leader Rewards:</b> Secret Key, Ability Capsule
+        </p>
+        <p>
+          <b>Delibird Deliveries:</b> TMs Fire Fang, Ice Fang, Thunder Fang, Poison Fang, Natural Gift
+        </p>
+        <p><b>Overworld Items:</b> Fast Ball</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 111</h1>
+        <p>
+          <b>Land (Lvl 42):</b> 20% Bramblin, 10% Rockruff (5-42), 10% Mudsdale, 10% Growlithe-Hisui, 10%
+          Onix, 10% Vibrava, 10% Maractus, 5% Excadrill, 5% Glimmora, 5% Glimmet (5-42), 4% Krokorok, 1% Krookodile 
+        </p>
+        <p><b>Rod:</b> 40% Palitoad, 15% Stunfisk, 10% Whiscash, 10% Barboach (5-33), 
+        10% Tynamo, 10% Croagunk, 5% Lanturn</p>
+        <p><b>Rock Smash:</b> 60% Dwebble, 40% Trapinch</p>
+        <p>
+          <b>Overworld Items:</b> Revive
+        <p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 118</h1>
+        <p>
+          <b>Land (Lvl 54):</b> 20% Munchlax (5-54), 20% Medicham, 10% Snorlax, 10% Luxray,
+          10% Pyroar, 5% Beedrill, 10% Butterfree, 5% Arboliva, 5% Togedemaru
+        </p>
+        <p><b>Rock Smash:</b> 50% Gligar, 50% Nacli</p>
+        <p><b>Rod:</b> 30% Bruxish, 20% Dewgong, 10% Barbaracle, 10% Sharpedo, 
+        10% Bellibolt, 10% Stunfisk, 5% Lanturn, 4% Lotad (5-33), 1% Ludicolo</p>
+        <p><b>Overworld Items:</b> Heart Scale (Hidden)</p>
+        <p><b>NPC Items:</b> TMs Fire Punch, Ice Punch, Thunder Punch, Poison Jab, Mega Punch, Brick Break,
+        Shadow Punch</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 117</h1>
+        <p>
+          <b>Land:</b> 20% Electrike (5-33), 15% Magneton, 10% Petilil, 10% Jumpluff,
+          10% Elekid (5-33), 10% Galvantula, 10% Helioptile (5-33), 5% Ampharos, 5% Shinx (5-33),
+          4% Electabuzz, 1% Pidgeot
+        </p>
+        <p><b>Rod:</b> 20% Swalot, 20% Croagunk, 20% Toxel, 15% Tentacruel, 15% Slowpoke-Galar, 10% Gulpin</p>
+        <p><b>Surfing (Lvl 53):</b> 50% Koffing (5-53), 40% Weezing, 10% Lanturn</p>
+        <p><b>Overworld Items:</b> TR Electroweb</p>
+      </div>
+
+      <div class="resources">
+        <h1>Fiery Path</h1>
+        <p>
+          <b>Land:</b> 20% Torkoal, 15% Growlithe-Hisui, 15% Houndour, 10%
+          Charcadet, 10% Salandit, 10% Cyndaquil, 10% Litwick, 5% Sizzlipede, 5%
+          Larvesta
+        </p>
+        <p><b>Rock Smash:</b> 60% Sizzlipede, 40% Skorupi</p>
+        <p><b>Overworld Items:</b> Auspicious Armor, Malicious Armor</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 111</h1>
+        <p>
+          <b>Land (Lvl 42):</b> 20% Bramblin, 10% Rockruff (5-42), 10% Mudsdale, 10% Growlithe-Hisui, 10%
+          Onix, 10% Vibrava, 10% Maractus, 5% Excadrill, 5% Glimmora, 5% Glimmet (5-42), 4% Krokorok, 1% Krookodile 
+        </p>
+        <p><b>Rod:</b> 40% Barboach, 30% Tynamo, 30% Tympole</p>
+        <p><b>Rock Smash:</b> 60% Dwebble, 40% Trapinch</p>
+        <p>
+          <b>Overworld Items:</b> Revive, Heart Scale, TR Rock Blast, Fighting Gem,
+          Shed Shell, Rare Candy, Stardust
+        </p>
+        <p>
+          <b>Overworld Berries:</b> Pinap, Grepa, Razz 
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 113</h1>
+        <p>
+          <b>Land:</b> 20% Poipole, 15% Sneasel, 15% Glimmet, 10% Murkrow, 10%
+          Zorua, 10% Nymble, 10% Skorupi, 5% Zigzagoon-Galar, 5% Toxel
+        </p>
+        <p><b>Overworld Items:</b> Black Sludge</p>
+      </div>
+
+      <div class="resources">
+        <h1>Fallarbor Town</h1>
+        <p>
+          <b>Rock Smash:</b> 30% Tyrunt, 30% Amaura, 20% Anorith, 20% Dwebble
+        </p>
+        <p>
+          <b>Special:</b> Starter Eevee Egg (Randomly Evolves into any form)
+        </p>
+        <p>
+          <b>Shop TM Packages:</b> Bounce, Psychic Fangs, Dragon Claw, Water
+          Pulse, Leech Life, Play Rough
+        </p>
+        <p><b>Overworld Tutor:</b> Mega Punch, Mega Kick</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 114</h1>
+        <p>
+          <b>Land:</b> 20% Ralts, 15% Yanma, 15% Cutiefly, 10% Clefairy, 10%
+          Ledyba, 10% Skorupi, 10% Nymble, 5% Aipom, 5% Minccino
+        </p>
+        <p><b>Rock Smash:</b> 60% Roggenrola, 40% Larvitar</p>
+        <p><b>Berry Trees:</b> 31 Persim, 4 Custap</p>
+        <p>
+          <b>Overworld Tutor:</b> Slash, X-Scissor, Psycho Cut, Night Slash, Air
+          Slash, Dig
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Meteor Falls 1F1R</h1>
+        <p>
+          <b>Land:</b> 20% Beldum, 15% Drilbur, 15% Phanpy, 10% Rhyhorn, 10%
+          Magnemite, 10% Varoom, 10% Pawniard, 5% Clefairy, 5% Gligar
+        </p>
+        <p><b>Rod:</b> 40% Barboach, 30% Tynamo, 30% Tympole</p>
+      </div>
+
+      <div class="resources">
+        <h1>Meteor Falls 1F2R</h1>
+        <p>
+          <b>Land:</b> 20% Deino, 15% Beldum, 15% Tinkatink, 10% Teddiursa, 10%
+          Magnemite, 10% Drilbur, 10% Sneasel, 5% Jangmo-o, 5% Frigibax
+        </p>
+        <p><b>Rod:</b> 40% Barboach, 30% Tynamo, 30% Tympole</p>
+      </div>
+
+      <div class="resources">
+        <h1>Meteor Falls B1F1R</h1>
+        <p>
+          <b>Land:</b> 20% Dreepy, 15% Tinkatink, 15% Teddiursa, 10% Pawniard,
+          10% Magnemite, 10% Gligar, 10% Phanpy, 5% Deino, 5% Beldum
+        </p>
+        <p><b>Rod:</b> 40% Barboach, 30% Tynamo, 30% Tympole</p>
+        <p>
+          <b>Special:</b> Tapu Lele (locked behind waterfall, Omniboosted +2)
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Meteor Path [Double Encounter]</h1>
+        <p>
+          <b>Land:</b> 20% Kangaskhan, 15% Lunatone, 15% Solrock, 10%
+          Turtonator, 10% Druddigon, 10% Girafarig, 10% Onix, 5% Iron Jugulis,
+          5% Iron Thorns
+        </p>
+        <p>
+          <b>NPC Items / Rock Smash:</b> Metal Alloy, Peat Block, Electirizer,
+          Magmarizer, Protector, Razor Claw, Razor Fang, Black Augurite, Reaper
+          Cloth
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Jagged Pass [Double Encounter]</h1>
+        <p>
+          <b>Land:</b> 20% Tauros-Paldea-Combat, 15% Tauros-Paldea-Blaze, 15%
+          Taruos-Paldea-Aqua, 10% Heracross, 10% Falinks, 10% Girafarig, 10%
+          Farfetch'd-Galar, 5% Absol, 5% Klawf
+        </p>
+        <p><b>Overworld Items:</b> Leek</p>
+        <p><b>Overworld Tutor:</b> Take Down</p>
+      </div>
+
+      <div class="resources">
+        <h1>Lavaridge Town</h1>
+        <p><b>Special:</b> Starter Egg</p>
+        <p>
+          <b>Gym Leader Rewards:</b> 2 Heart Scale, Modest Mint, Adamant Mint,
+          Jolly Mint, Timid Mint, 5 Serious Mint
+        </p>
+        <p>
+          <b>Shop TM Packages:</b> Volt Switch, U-turn, Protect, Triple Axel,
+          Draining Kiss
+        </p>
+        <p>
+          <b>Gym Leader Tutor Prize:</b> Close Combat, Leaf Storm, Draco Meteor,
+          Overheat
+        </p>
+        <p>
+          <b>Overworld Tutor:</b> Alluring Voice, Psychic Noise, Power Gem,
+          Psyshock
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Cave of Origin</h1>
+        <p>
+          <b>Land:</b> 20% Cubone, 15% Rockruff, 15% Tyrogue, 10% Spritzee, 10%
+          Nymble, 10% Espurr, 10% Sandshrew, 5% Zubat, 5% Noibat
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Sootopolis City</h1>
+        <p>
+          <b>Land:</b> 20% Lotad, 15% Gossifleur, 15% Cottonee, 10% Mareep, 10%
+          Shinx, 10% Sandshrew-Alola, 10% Voltrob-Hisui, 5% Bounsweet, 5% Budew
+        </p>
+        <p>
+          <b>Rod:</b> 40% Relicanth, 40% Tatsugiri-Stretchy, 18%
+          Tatsugiri-Droopy, 2% Tatsugiri-Curly
+        </p>
+        <p><b>Water:</b> 40% Emolga, 30% Starly, 30% Fletchling</p>
+        <p>
+          <b>Gym Leader Rewards:</b> Heart Scale, Ability Capsule, Calm Mint,
+          Careful Mint, Serious Mint
+        </p>
+        <p>
+          <b>Shop TM Packages:</b> Thunderbolt, Flamethrower, Ice Beam, Energy
+          Ball, Surf, Psychic, Sludge Bomb, Earth Power, Hyper Voice
+        </p>
+        <p>
+          <b>Gym Leader Tutor Prize:</b> Rock Tomb, Bulldoze, Icy Wind,
+          Electroweb, Low Sweep, Mud Shot
+        </p>
+        <p><b>Overworld Tutor:</b> Dive</p>
+      </div>
+
+      <div class="resources">
+        <h1>Tera Island</h1>
+        <p>
+          <b>Land:</b> 20% Charcadet, 15% Glimmet, 15% Nymble, 10% Poltchageist,
+          10% Varoom, 10% Pawmi, 10% Nacli, 5% Pawniard, 5% Mankey
+        </p>
+        <p><b>Overworld Tutor:</b> Tera Blast</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 111 [Perma Sandstorm]</h1>
+        <p>
+          <b>Land:</b> 20% Gligar, 15% Trapinch, 15% Sandile, 10% Larvitar, 10%
+          Nacli, 10% Drilbur, 10% Skorupi, 5% Sandshrew, 5% Dwebble
+        </p>
+        <p><b>Rod:</b> 40% Barboach, 30% Tynamo, 30% Tympole</p>
+        <p><b>Rock Smash:</b> 60% Dwebble, 40% Trapinch</p>
+        <p>
+          <b>Overworld Items:</b> Thick Club, Heavy Duty Boots, Safety Goggles
+        </p>
+        <p><b>Overworld Tutor:</b> Muddy Water</p>
+      </div>
+
+      <div class="resources">
+        <h1>Mirage Tower 1F</h1>
+        <p>
+          <b>Land:</b> 20% Trapinch, 15% Meowth-Galar, 15% Skorupi, 10%
+          Larvitar, 10% Nacli, 10% Tyrunt, 10% Amaura, 5% Sandshrew, 5% Baltoy
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Mirage Tower 2F</h1>
+        <p>
+          <b>Land:</b> 20% Sandile, 15% Meowth-Galar, 15% Skorupi, 10% Larvitar,
+          10% Nacli, 10% Sandshrew, 10% Baltoy, 5% Rhyhorn, 5% Swinub
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Mirage Tower 3F</h1>
+        <p>
+          <b>Land:</b> 20% Nacli, 15% Meowth-Galar, 15% Skorupi, 10% Trapinch,
+          10% Sandile, 10% Sandshrew, 10% Baltoy, 5% Tyrunt, 5% Amaura
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Mirage Tower 4F</h1>
+        <p>
+          <b>Land:</b> 20% Gligar, 15% Sandshrew, 15% Baltoy, 10% Meowth-Galar,
+          10% Skorupi, 10% Zubat, 10% Noibat, 5% Dwebble, 5% Archen
+        </p>
+        <p><b>Rock Smash:</b> 60% Anorith, 40% Skorupi</p>
+      </div>
+
+      <div class="resources">
+        <h1>Mirage Tunnel [Double Encounter]</h1>
+        <p>
+          <b>Land:</b> 20% Sableye, 15% Sigilyph, 15% Absol, 10% Klawf, 10%
+          Druddigon, 10% Lunatone, 10% Solrock, 5% Onix, 5% Dunsparce
+        </p>
+        <p><b>Overworld Items:</b> Shed Shell</p>
+      </div>
+
+      <div class="resources">
+        <h1>Mirage Town</h1>
+        <p>
+          <b>Land:</b> 20% Maractus, 15% Trapinch, 15% Geodude, 10% Anorith, 10%
+          Dwebble, 10% Roggenrola, 10% Aron, 5% Meowth-Galar, 5% Sandshrew
+        </p>
+        <p>
+          <b>Gym Leader Rewards:</b> 2 Heart Scale, Ability Capsule, Brave Mint,
+          Serious Mint
+        </p>
+        <p>
+          <b>Shop TM Packages:</b> Acrobatics, Phantom Force, Liquidation,
+          Icicle Crash, Drain Punch, Giga Drain
+        </p>
+        <p>
+          <b>Gym Leader Tutor Prize:</b> Shock Wave, Aerial Ace, Magical Leaf,
+          Aura Sphere, Smart Strike
+        </p>
+        <p><b>Overworld Tutor:</b> Return, Frustration</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 115</h1>
+        <p>
+          <b>Land:</b> 20% Cutiefly, 15% Glimmet, 15% Munna, 10% Pawmi, 10%
+          Magnemite, 10% Tinkatink, 10% Ralts, 5% Minccino, 5% Aipom
+        </p>
+        <p><b>Berry Trees:</b> 20 Sitrus, Rindo, Occa, Passho</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 118</h1>
+        <p><b>Overworld Items:</b> Toxic Orb</p>
+        <p><b>Berry Trees:</b> 30 Sitrus</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 123</h1>
+        <p>
+          <b>Land:</b> 20% Sneasel, 15% Timburr, 15% Tinkatink, 10% Meowth-G,
+          10% Glimmet, 10% Phanpy, 10% Munna, 5% Pawmi, 5% Togepi
+        </p>
+        <p><b>Overworld Items:</b> Big Root</p>
+        <p>
+          <b>Berry Trees:</b> 20 Sitrus, 4 Figy, 4 Wiki, 4 Mago, 4 Aguav, 4
+          Iapapa, Wacan, Yache, Chople, Kebia, Shuca, Coba
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 119 [Perma Grassy Terrain and Rain]</h1>
+        <p>
+          <b>Land:</b> 20% Scyther, 15% Karrablast, 15% Glimmet, 10% Pineco, 10%
+          Yanma, 10% Gossifleur, 10% Cottonee, 5% Sewaddle, 5% Venipede
+        </p>
+        <p><b>Special:</b> Tapu Bulu (2% outside of the normal table)</p>
+        <p><b>Overworld Items:</b> Grassy Seed</p>
+        <p>
+          <b>Berry Trees:</b> 30 Sitrus, 20 Lum, Haban (locked behind
+          Waterfall), Roseli (locked behind Waterfall)
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Fortree City</h1>
+        <p>
+          <b>Land:</b> 20% Sigilyph, 15% Grubbin, 15% Scatterbug, 10%
+          Fletchling, 10% Starly, 10% Wingull, 10% Ducklett, 5% Ledyba, 5%
+          Nymble
+        </p>
+        <p><b>Special:</b> Tapu Koko (after Winona, +1 Omniboosted)</p>
+        <p>
+          <b>Gym Leader Rewards:</b> 2 Heart Scale, Ability Capsule, Jolly Mint,
+          Naive Mint
+        </p>
+        <p>
+          <b>Shop TM Packages:</b> Fly, High Horsepower, Stone Edge, Supercell
+          Slam, Gunk Shot, Light Screen, Reflect, Skill Swap, Roost
+        </p>
+        <p>
+          <b>Gym Leader Tutor Prize:</b> Dual Wingbeat, Grassy Glide, Flip Turn
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Scorched Slab</h1>
+        <p>
+          <b>Land:</b> 20% Larvesta, 15% Cyndaquil, 15% Litwick, 10% Growlithe,
+          10% Charcadet, 10% Noibat, 10% Zubat, 5% Sizzlipede, 5% Torkoal
+        </p>
+        <p><b>Water:</b> 40% Archen, 30% Noibat, 30% Zubat</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 120 [Perma Rain]</h1>
+        <p>
+          <b>Land:</b> 20% Tinkatink, 15% Pawniard, 15% Togepi, 10% Riolu, 10%
+          Stuffel, 10% Sneasel, 10% Gligar, 5% Scyther, 5% Hawlucha
+        </p>
+        <p><b>Water:</b> 60% Tympole, 40% Flamigo</p>
+        <p><b>Overworld Items:</b> Loaded Dice</p>
+        <p>
+          <b>Berry Trees:</b> 31 Cheri, 31 Chesto, 31 Pecha, 31 Rawst, 31
+          Aspear, 31 Leppa, 31 Persim, 10 Sitrus, 20 Lum
+        </p>
+        <p><b>Overworld Tutor:</b> Natural Gift</p>
+      </div>
+
+      <div class="resources">
+        <h1>Mt. Pyre</h1>
+        <p>
+          <b>Land:</b> 20% Yamask-Galar, 15% Misdreavus, 15% Shuppet, 10%
+          Spoink, 10% Espurr, 10% Sableye, 10% Absol, 5% Duskull, 5% Abra
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 121 [Perma Misty Terrain]</h1>
+        <p>
+          <b>Land:</b> 20% Mankey, 15% Gastly, 15% Ralts, 10% Sneasel, 10%
+          Glimmet, 10% Zorua, 10% Murkrow, 5% Poipole, 5% Noibat
+        </p>
+        <p>
+          <b>Water:</b> 30% Noibat, 30% Murkrow, 20% Bombirdier, 20% Flamigo
+        </p>
+        <p><b>Overworld Items:</b> Misty Seed, Ability Shield</p>
+        <p>
+          <b>Berry Trees:</b> 20 Sitrus, 20 Lum, Payapa, Tanga, Kasib, Colbur
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Lilycove City</h1>
+        <p>
+          <b>Land:</b> 20% Alcremie, 15% Petilil, 15% Cottonee, 10% Munna, 10%
+          Flittle, 10% Vulpix-Alola, 10% Cutiefly, 5% Ralts, 5% Abra
+        </p>
+        <p>
+          <b>Shop TM Packages:</b> Solar Beam, Solar Blade, Sky Attack, Double
+          Edge, Low Kick, Grass Knot
+        </p>
+        <p><b>Overworld Items:</b> Throat Spray</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 124 [Perma Snow]</h1>
+        <p><b>Overworld Items:</b> Iron Ball</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 125</h1>
+        <p>
+          <b>Land:</b> 20% Duraludon, 15% Deino, 15% Dreepy, 10% Goomy, 10%
+          Frigibax, 10% Bagon, 10% Jangmo-o, 10% Gible
+        </p>
+        <p><b>Overworld Items:</b> Clear Amulet</p>
+        <p><b>Berry Trees:</b> 30 Sitrus</p>
+      </div>
+
+      <div class="resources">
+        <h1>Shoal Cave Entrance Room</h1>
+        <p>
+          <b>Land:</b> 20% Sneasel, 15% Larvitar, 15% Beldum, 10% Meowth-Galar,
+          10% Varoom, 10% Cetoddle, 10% Bergmite, 5% Zubat, 5% Noibat
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Shoal Cave Other Rooms</h1>
+        <p>
+          <b>Land:</b> 20% Swinub, 15% Tinkatink, 15% Pawniard, 10% Ralts, 10%
+          Hatenna, 10% Sneasler, 10% Munna, 5% Zubat, 5% Noibat
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Shoal Cave Ice Room</h1>
+        <p>
+          <b>Land:</b> 20% Sneasel-Hisui, 15% Swinub, 15% Cetoddle, 10%
+          Sandshrew-Alola, 10% Bergmite, 10% Tinkatink, 10% Pawniard, 5%
+          Larvitar, 5% Beldum
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Mossdeep City [Gym - Perma TrickRoom except Leader]</h1>
+        <p>
+          <b>Gym Leader Rewards:</b> 2 Heart Scale, Modest Mint, Serious Mint
+        </p>
+        <p>
+          <b>Shop TM Packages:</b> Superpower, Wave Crash, Flare Blitz, Wood
+          Hammer, Brave Bird, Meteor Beam, Earthquake
+        </p>
+        <p><b>Overworld Items:</b> Psychic Seed</p>
+        <p>
+          <b>Gym Leader Tutor Prize:</b> Expanding Force, Risising Voltage,
+          Supercell Slam, Upper Hand
+        </p>
+        <p><b>Overworld Tutor:</b> Trick, Rock Slide</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 127</h1>
+        <p><b>Overworld Items:</b> Eject Button</p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 128</h1>
+        <p>
+          <b>Special:</b> Tornadus (Surf), Thundurus (Surf), Landorus (Surf),
+          Enamorus (Surf)
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Route 130 [Perma Tail Wind]</h1>
+        <p>
+          <b>Land:</b> 20% Hawlucha, 15% Tinkatink, 15% Togepi, 10% Teddiursa,
+          10% Mankey, 10% Rookidee, 10% Pawniard, 5% Gossifleur, 5% Cottonee
+        </p>
+        <p><b>Overworld Items:</b> Leader's Crest</p>
+      </div>
+
+      <div class="resources">
+        <h1>Pacifidlog Town [Ferry ticket from Flannery]</h1>
+        <p><b>Land:</b> 70% Wailmer, 30% Dondozo</p>
+      </div>
+
+      <div class="resources">
+        <h1>Stella Island</h1>
+        <p>
+          <b>Land:</b> 20% Iron Jugulis, 15% Tadbulb, 15% Toedscool, 10%
+          Gimmighoul, 10% Nymble, 10% Pawmi, 10% Mankey, 5% Girafarig, 5%
+          Dunsparce
+        </p>
+        <p><b>Special:</b> Ogerpon (after Phoebe, Omniboosted +2)</p>
+        <p><b>Overworld Tutor:</b> Tera Blast</p>
+      </div>
+
+      <div class="resources">
+        <h1>Lava Cave</h1>
+        <p>
+          <b>Land:</b> 20% Growlithe-Hisui, 15% Yamask-Galar, 15% Golett, 10%
+          Slugma, 10% Numel, 10% Geodude, 10% Roggenrola, 5% Turtonator, 5%
+          Torkoal
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Lavaridge Town [Gym - Perma Magma Storm except Leader]</h1>
+        <p><b>Special:</b> Starter Egg</p>
+        <p>
+          <b>Gym Leader Rewards:</b> 2 Heart Scale, Modest Mint, Adamant Mint,
+          Jolly Mint, Timid Mint, 5 Serious Mint
+        </p>
+        <p>
+          <b>Shop TM Packages:</b> Volt Switch, U-turn, Protect, Triple Axel,
+          Draining Kiss
+        </p>
+        <p>
+          <b>Gym Leader Tutor Prize:</b> Close Combat, Leaf Storm, Draco Meteor,
+          Overheat
+        </p>
+        <p>
+          <b>Overworld Tutor:</b> Alluring Voice, Psychic Noise, Power Gem,
+          Psyshock
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Mt. Chimney</h1>
+        <p>
+          <b>Land:</b> 20% Great Tusk, 15% Slither Wing, 15% Sandy Shocks, 15%
+          Roaring Moon, 10% Walking Wake, 10% Gouging Fire, 10% Raging Bolt, 5%
+          Flutter Mane
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>New Mauville</h1>
+        <p>
+          <b>Land:</b> 20% Iron Treads, 15% Iron Crown, 15% Iron Leaves, 15%
+          Iron Boulder, 10% Iron Moth, 10% Iron Bundle, 10% Iron Valiant, 5%
+          Iron Hands
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Desert Underpass</h1>
+        <p>
+          <b>Land:</b> 20% Aerodactyl, 15% Drilbur, 15% Archen, 10% Trapinch,
+          10% Tinkatink, 10% Anorith, 10% Skorupi, 5% Larvitar, 5% Aron
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Evergrande City</h1>
+        <p>
+          <b>Land:</b> 20% Gimmighoul, 15% Larvesta, 15% Poipole, 10% Impidimp,
+          10% Togepi, 10% Teddiursa, 10% Rookidee, 5% Jangmo-o, 5% Frigibax
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Victory Road 1F</h1>
+        <p>
+          <b>Land:</b> 20% Duraludon, 15% Drilbur, 15% Poipole, 10% Larvitar,
+          10% Beldum, 10% Gible, 10% Bagon, 5% Jangmo-o, 5% Frigibax
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Victory Road B1F</h1>
+        <p>
+          <b>Land:</b> 20% Impidimp, 15% Deino, 15% Dreepy, 10% Larvitar, 10%
+          Beldum, 10% Tinkatink, 10% Pawniard, 5% Jangmo-o, 5% Frigibax
+        </p>
+        <p>
+          <b>Rock Smash:</b> 30% Larvitar, 30% Beldum, 20% Nacli, 20% Archen
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Victory Road B2F</h1>
+        <p>
+          <b>Land:</b> 20% Drilbur, 15% Tinkatink, 15% Pawniard, 10% Teddiursa,
+          10% Mankey, 10% Deino, 10% Dreepy, 5% Jangmo-o, 5% Frigibax
+        </p>
+      </div>
+
+      <div class="resources">
+        <h1>Evergrande City</h1>
+        <p>
+          <b>Land:</b> 20% Gimmighoul, 15% Larvesta, 15% Poipole, 10% Impidimp,
+          10% Togepi, 10% Teddiursa, 10% Rookidee, 5% Jangmo-o, 5% Frigibax
+        </p>
+      </div>
+    </div>
+  </body>
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const select = document.getElementById('theme-select');
+  const root = document.documentElement;
+
+  if (!select) return;
+
+  // Sync dropdown with saved theme
+  const saved = localStorage.getItem('porydex-theme') || 'dark';
+  select.value = saved;
+
+  select.addEventListener('change', () => {
+    const theme = select.value;
+
+    root.classList.remove('dark-mode', 'theme-azure');
+
+    if (theme === 'dark') {
+      root.classList.add('dark-mode');
+    } else if (theme === 'azure') {
+      root.classList.add('dark-mode', 'theme-azure');
+    }
+
+    localStorage.setItem('porydex-theme', theme);
+  });
+});
+</script>
+
+</html>
