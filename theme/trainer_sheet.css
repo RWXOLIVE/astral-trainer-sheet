@@ -236,3 +236,72 @@ body {
 .theme-azure .navbar a:hover {
   color: #ffffff;
 }
+
+.dynamic-tooltip {
+  position: fixed !important; /* Ensure it's fixed to viewport */
+  background: #2c3e50;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  max-width: 200px;
+  white-space: normal;
+  word-wrap: break-word;
+  z-index: 9999 !important; /* Ensure highest z-index */
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  animation: tooltipFadeIn 0.2s ease-out;
+  text-align: center;
+  /* Reset any inherited positioning */
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+}
+
+/* Ensure table cells allow positioning */
+td {
+  position: static !important; /* Remove any relative positioning */
+}
+
+.dynamic-tooltip::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #2c3e50 transparent transparent transparent;
+}
+
+@keyframes tooltipFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-90%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-100%);
+  }
+}
+
+/* Add hover effect to items with tooltips */
+[data-item] {
+  cursor: help;
+  border-bottom: 1px dotted #666;
+  position: relative;
+}
+
+/* Different colors for different item types */
+[data-item="ability"] {
+  color: #e74c3c; /* Red for abilities */
+}
+
+[data-item="move"] {
+  color: #3498db; /* Blue for moves */
+}
+
+[data-item="item"] {
+  color: #2ecc71; /* Green for items */
+}

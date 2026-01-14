@@ -1,0 +1,4918 @@
+<!DOCTYPE html>
+<html><head>
+  <!-- Apply saved theme ASAP to avoid flash -->
+  <script>
+(() => {
+  const saved = localStorage.getItem('porydex-theme') || 'dark';
+  const root = document.documentElement;
+
+  root.classList.remove('dark-mode', 'theme-azure');
+
+  if (saved === 'dark') {
+    root.classList.add('dark-mode');
+  } else if (saved === 'azure') {
+    root.classList.add('dark-mode', 'theme-azure');
+  }
+})();
+</script>
+
+	<meta charset="utf-8" />
+	<!--<link rel="icon" type="image/ico" href="images/favicon.ico">-->
+    <link rel="icon" type="image/gif" href="images/tepig.gif"  >
+	<title>Pok&eacute;dex - Pok&eacute;mon Showdown</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8" />
+	<link rel="stylesheet" href="https://play.pokemonshowdown.com/style/font-awesome.css" />
+	<link rel="stylesheet" href="theme/panels.css" />
+	<link rel="stylesheet" href="theme/main.css" />
+	<link rel="stylesheet" href="theme/trainer_sheet.css" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://play.pokemonshowdown.com/style/utilichart.css?b359" />
+	<link rel="stylesheet" href="theme/pokedex.css" />
+
+	<!-- Workarounds for IE bugs to display trees correctly. -->
+	<!--[if lte IE 6]><style> li.tree { height: 1px; } </style><![endif]-->
+	<!--[if IE 7]><style> li.tree { zoom: 1; } </style><![endif]-->
+
+</head><body>
+
+	<div class="pfx-topbar">
+		<div class="header">
+			<ul class="nav">
+				<li><a class="button nav-first" href="https://github.com/lhearachel/porydex"><img src="images/pokemonshowdownbeta.png" alt="Pokémon Showdown! (beta)" />Github</a></li>
+				<li><a class="button" href="https://rwxolive.github.io/AstralDex/">Pokédex</a></li>
+				<li><a class="button" href="https://rwxolive.github.io/AstralCalc/">Calculator</a></li>
+				<li><a class="button" href="https://discord.gg/fZWBmEZeZx">Discord</a></li>
+        		<li><a class="button" href="https://drive.google.com/drive/folders/1X05r8shCeFDpyGCsSXXkryZ4Bt5pWd5B?usp=sharing">Google Drive</a></li>
+                <li><a class="button nav-last" href="resources.html" >Trainer Sheet</a></li>
+                <div class="theme-picker">
+                <label for="theme-select">Theme</label>
+                <select id="theme-select">
+                  <option value="light">Light</option>
+                  <option value="dark">Dark</option>
+                  <option value="azure">Night (Blue)</option>
+                </select>
+              </div>
+			</ul>
+			<div style="clear:both"></div>
+		</div>
+	</div>
+    <div class="navbar">
+    <ul>
+        <li><a href="resources.html">Home</a></li>
+        <li><a href="roxanne-brock_split.html">Roxanne/Brock (20)</a></li>
+        <li><a href="brawly_split.html">Brawly (25)</a></li>
+        <li><a href="norman_split.html">Norman (37)</a></li>
+        <li><a href="elesa_split.html">Elesa/Jasmine (44)</a></li>
+        <li><a href="blaine_split.html">Flannery & Blaine (54)</a></li>
+        <li><a href="winona_split.html">Winona (73)</a></li>
+        <li><a href="tate_and_liza_split.html">Tate & Liza (90)</a></li>
+        <li><a href="flannery_split.html">Crasher Wake & Nessa (93)</a></li>
+        <li><a href="elite_four_split.html">Elite Four (99)</a></li>
+    </ul>
+</div>
+<div>
+<div class="container">
+<h1 class="location">Route 111</h1>
+<div class="line">
+</div>
+</div>
+<table class="content-table">
+<caption class="caption-content">Aroma Lady Celina & Camper Tyron</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/aurorus.png" alt=""></img></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/glalie.png" alt=""></img></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></img></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></img></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/arctovish.png" alt=""></img></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/mrmime-galar.png" alt=""></img></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Aurorus</th>
+  <th>Glalie</th>
+  <th></th>
+  <th></th>
+  <th>Arctovish</th>
+  <th>Mr. Mime-Galar</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td></td>
+  <td>45</td>
+  <td>45</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Focus Sash</td>
+  <td>King’s Rock</td>
+  <td></td>
+  <td></td>
+  <td>Iapapa Berry</td>
+  <td>Eviolite</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Snow Warning</td>
+  <td>Moody</td>
+  <td></td>
+  <td></td>
+  <td>Ice Body</td>
+  <td>Filter</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Modest</td>
+  <td>Naughty</td>
+  <td></td>
+  <td></td>
+  <td>Sassy</td>
+  <td>Timid</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Aurora Veil</td>
+  <td>Protect</td>
+  <td></td>
+  <td></td>
+  <td>Brine</td>
+  <td>Fake Out</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Glaciate</td>
+  <td>Explosion</td>
+  <td></td>
+  <td></td>
+  <td>Super Fang</td>
+  <td>Blizzard</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Power Gem</td>
+  <td>Icy Wind</td>
+  <td></td>
+  <td></td>
+  <td>Icicle Crash</td>
+  <td>Psyshock</td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Thunderbolt</td>
+  <td>Chilling Water</td>
+  <td></td>
+  <td></td>
+  <td>Freeze-Dry</td>
+  <td>Shadow Ball</td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Kindler Hayden</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/heatmor.png" alt=""></img></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/ninetales.png" alt=""></img></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/typhlosion-hisui.png" alt=""></img></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/houndoom.png" alt=""></img></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></img></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></img></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Heatmor</th>
+  <th>Ninetales</th>
+  <th>Typhlosion-Hisui</th>
+  <th>Houndoom</th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>44</td>
+  <td>44</td>
+  <td>45</td>
+  <td>44</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Expert Belt</td>
+  <td>Covert Cloak</td>
+  <td>Charcoal</td>
+  <td>Power Herb</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Tough Claws</td>
+  <td>Pixilate</td>
+  <td>Blazing Soul</td>
+  <td>Unnerve</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Hasty</td>
+  <td>Timid</td>
+  <td>Mild</td>
+  <td>Hasty</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Fire Lash</td>
+  <td>Fake Tears</td>
+  <td>Eruption</td>
+  <td>Solar Beam</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Stomping Tantrum</td>
+  <td>Mystical Fire</td>
+  <td>Infernal Parade</td>
+  <td>Counter</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Giga Drain</td>
+  <td>Hyper Voice</td>
+  <td>Wild Charge</td>
+  <td>Flamethrower</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Thunder Punch</td>
+  <td>Energy Ball</td>
+  <td>Flamethrower</td>
+  <td>Pursuit</td>
+  <td></td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Psychic Simon</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/espeon.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/golduck.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/rapidash-galar.png" alt=""></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Espeon</th>
+  <th>Golduck</th>
+  <th>Rapidash-Galar</th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>45</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Light Clay</td>
+  <td>Loaded Dice</td>
+  <td>Ground Gem</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Magic Guard</td>
+  <td>Swift Swim</td>
+  <td>Dazzling</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Adamant</td>
+  <td>Jolly</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Alluring Voice</td>
+  <td>Arm Thrust</td>
+  <td>Hypnosis</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Light Screen</td>
+  <td>Triple Dive</td>
+  <td>Drill Run</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Psychic Noise</td>
+  <td>Barrage</td>
+  <td>Play Rough</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Reflect</td>
+  <td>Knock Off</td>
+  <td>Zen Headbutt</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+</div>
+<table class="content-table">
+<caption class="caption-content">Black Belt Peter</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/emboar.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/weavile.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/bouffalant.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hawlucha.png"></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Emboar</th>
+  <th>Weavile</th>
+  <th>Bouffalant</th>
+  <th>Hawlucha</th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>45</td>
+  <td>45</td>
+  <td>45</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Eject Pack</td>
+  <td>Focus Sash</td>
+  <td>Life Orb</td>
+  <td>White Herb</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Rock Head</td>
+  <td>Technician</td>
+  <td>Reckless</td>
+  <td>Unburden</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Adamant</td>
+  <td>Adamant</td>
+  <td>Jolly</td>
+  <td>Jolly</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Flare Blitz</td>
+  <td>Triple Axel</td>
+  <td>Head Charge</td>
+  <td>Substitute</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Superpower</td>
+  <td>Pursuit</td>
+  <td>Wild Charge</td>
+  <td>Close Combat</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Head Smash</td>
+  <td>Knock Off</td>
+  <td>Lash Out</td>
+  <td>Acrobatics</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Sucker Punch</td>
+  <td>Swords Dance</td>
+  <td>Bulldoze</td>
+  <td>Swords Dance</td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+<div class="container">
+</div>
+</div>
+<table class="content-table">
+<caption class="caption-content">Camper Travis</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/garganacl.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/golem-alola.png"></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Garganacl</th>
+  <th>Golem-Alola</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Normal Gem</td>
+  <td>Custap Berry</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Purifying Salt</td>
+  <td>Galvanize</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Modest</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+<td>Self-Destruct</td>
+<td>Explosion</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+<td></td>
+<td>Rock Wrecker</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+
+</tbody>
+</table>
+<div>
+<div class="container">
+<h1 class="location">Route 112</h1>
+<div class="line">
+</div>
+</div>
+<table class="content-table">
+<caption class="caption-content">Rival (If Chosen Grookey)</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/klefki.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hawlucha.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/araquanid.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/incineroar.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tangrowth.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dracozolt.png"></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Klefki</th>
+  <th>Hawlucha</th>
+  <th>Araquanid</th>
+  <th>Incineroar</th>
+  <th>Tangrowth</th>
+  <th>Dracozolt</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>47</td>
+  <td>47</td>
+  <td>48</td>
+  <td>47</td>
+  <td>48</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Light Clay</td>
+  <td>Focus Sash</td>
+  <td>Assault Vest</td>
+  <td>Rocky Helmet</td>
+  <td>White Herb</td>
+  <td>Life Orb</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Prankster</td>
+  <td>Unburden</td>
+  <td>Water Bubble</td>
+  <td>Intimidate</td>
+  <td>Regenerator</td>
+  <td>Volt Absorb</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Modest</td>
+  <td>Adamant</td>
+  <td>Adamant</td>
+  <td>Jolly</td>
+  <td>Quiet</td>
+  <td>Jolly</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Dazzling Gleam</td>
+  <td>Stone Edge</td>
+  <td>Liquidation</td>
+  <td>Bulk Up</td>
+  <td>Sludge Bomb</td>
+  <td>Bolt Beak</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Flash Cannon</td>
+  <td>Close Combat</td>
+  <td>Leech Life</td>
+  <td>Drain Punch</td>
+  <td>Power Whip</td>
+  <td>Dragon Rush</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Reflect</td>
+  <td>Acrobatics</td>
+  <td>Poison Jab</td>
+  <td>Blaze Kick</td>
+  <td>Leaf Storm</td>
+  <td>Stone Edge</td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Light of Ruin</td>
+  <td>Dual Wingbeat</td>
+  <td>Infestation</td>
+  <td>Darkest Lariat</td>
+  <td>Earthquake</td>
+  <td>Earthquake</td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+</div>
+<table class="content-table">
+<caption class="caption-content">Rival (If Chosen Tepig)</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/klefki.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hawlucha.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/quaquaval.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/magmortar.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/flapple.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dracozolt.png"></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Klefki</th>
+  <th>Hawlucha</th>
+  <th>Quaquaval</th>
+  <th>Magmortar</th>
+  <th>Flapple</th>
+  <th>Dracozolt</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>47</td>
+  <td>48</td>
+  <td>47</td>
+  <td>47</td>
+  <td>48</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Light Clay</td>
+  <td>Focus Sash</td>
+  <td>Coba Berry</td>
+  <td>Assault Vest</td>
+  <td>Flying Gem</td>
+  <td>Life Orb</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Prankster</td>
+  <td>Unburden</td>
+  <td>Moxie</td>
+  <td>Flame Body</td>
+  <td>Hustle</td>
+  <td>Volt Absorb</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Modest</td>
+  <td>Adamant</td>
+  <td>Adamant</td>
+  <td>Modest</td>
+  <td>Naive</td>
+  <td>Jolly</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Dazzling Gleam</td>
+  <td>Stone Edge</td>
+  <td>Ice Spinner</td>
+  <td>Thunderbolt</td>
+  <td>Draco Meteor</td>
+  <td>Bolt Beak</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Flash Cannon</td>
+  <td>Close Combat</td>
+  <td>Close Combat</td>
+  <td>Psychic</td>
+  <td>Grav Apple</td>
+  <td>Dragon Rush</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Reflect</td>
+  <td>Acrobatics</td>
+  <td>Aqua Step</td>
+  <td>Flamethrower</td>
+  <td>Acrobatics</td>
+  <td>Stone Edge</td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Light of Ruin</td>
+  <td>Dual Wingbeat</td>
+  <td>Facade</td>
+  <td>Fire Spin</td>
+  <td>U-turn</td>
+  <td>Earthquake</td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Rival (If Chosen Totodile)</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/klefki.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hawlucha.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/simipour.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/arcanine-hisui.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/serperior.png"></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dracozolt.png"></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Klefki</th>
+  <th>Hawlucha</th>
+  <th>Simipour</th>
+  <th>Arcanine-Hisui</th>
+  <th>Serperior</th>
+  <th>Dracozolt</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>47</td>
+  <td>47</td>
+  <td>47</td>
+  <td>48</td>
+  <td>48</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Light Clay</td>
+  <td>Focus Sash</td>
+  <td>Water Gem</td>
+  <td>King's Rock</td>
+  <td>Yache Berry</td>
+  <td>Life Orb</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Prankster</td>
+  <td>Unburden</td>
+  <td>Unburden</td>
+  <td>Rock Head</td>
+  <td>Contrary</td>
+  <td>Volt Absorb</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Modest</td>
+  <td>Adamant</td>
+  <td>Modest</td>
+  <td>Jolly</td>
+  <td>Timid</td>
+  <td>Jolly</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Dazzling Gleam</td>
+  <td>Stone Edge</td>
+  <td>Whirlpool</td>
+  <td>Flare Blitz</td>
+  <td>Leaf Storm</td>
+  <td>Bolt Beak</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Flash Cannon</td>
+  <td>Close Combat</td>
+  <td>Scald</td>
+  <td>Rock Climb</td>
+  <td>Dragon Pulse</td>
+  <td>Dragon Rush</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Reflect</td>
+  <td>Acrobatics</td>
+  <td>Psychic</td>
+  <td>Wild Charge</td>
+  <td>Earth Power</td>
+  <td>Stone Edge</td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Light of Ruin</td>
+  <td>Dual Wingbeat</td>
+  <td>Ice Beam</td>
+  <td>Extreme Speed</td>
+  <td>Glare</td>
+  <td>Earthquake</td>
+</tr>
+
+
+</tbody>
+</table>
+<div>
+<div class="container">
+<h1 class="location">Fiery Path</h1>
+<div class="line">
+</div>
+</div>
+<table class="content-table">
+<caption class="caption-content">Hiker Finn - Perma Sun</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/glimmora.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/diggersby.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/slowking.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/barraskewda.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Glimmora</th>
+  <th>Diggersby</th>
+  <th>Slowking</th>
+  <th>Barraskewda</th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>45</td>
+  <td>45</td>
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Held Item -->
+  <td>Air Balloon</td>
+  <td>Leftovers</td>
+  <td>Eject Button</td>
+  <td>Utility Umbrella</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Jolly</td>
+  <td>Modest</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Toxic Debris</td>
+  <td>Huge Power</td>
+  <td>Regenerator</td>
+  <td>Strong Jaw</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Moves -->
+  <td>Stealth Rock</td>
+  <td>Protect</td>
+  <td>Power Gem</td>
+  <td>Aqua Fangs</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Power Gem</td>
+  <td>Fire Punch</td>
+  <td>Future Sight</td>
+  <td>Substitute</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Sludge Wave</td>
+  <td>Earthquake</td>
+  <td>Slack Off</td>
+  <td>Close Combat</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>Spiky Shield</td>
+  <td>Hyper Fang</td>
+  <td>Flamethrower</td>
+  <td>Laser Focus</td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+<div>
+<div class="container">
+<h1 class="location">Route 112</h1>
+<div class="line">
+</div>
+</div>
+<table class="content-table">
+<caption class="caption-content">Aroma Lady Shayla [Double]</caption>
+<tbody>
+    <tr> <!-- Images -->
+      <td><img src="https://play.pokemonshowdown.com/sprites/gen5/flareon.png" alt=""></td>
+      <td><img src="https://play.pokemonshowdown.com/sprites/gen5/jumpluff.png" alt=""></td>
+      <td><img src="https://play.pokemonshowdown.com/sprites/gen5/brutebonnet.png" alt=""></td>
+      <td><img src="https://play.pokemonshowdown.com/sprites/gen5/cherrim.png" alt=""></td>
+      <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+      <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+    </tr>
+    <tr> <!-- Species -->
+      <th>Flareon</th>
+      <th>Jumpluff</th>
+      <th>Brute Bonnet</th>
+      <th>Cherrim</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr> <!-- Level -->
+      <td>44</td>
+      <td>44</td>
+      <td>45</td>
+      <td>45</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr> <!-- Item -->
+      <td>Lum Berry</td>
+      <td>Flying Gem</td>
+      <td>Lum Berry</td>
+      <td>Lum Berry</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr> <!-- Ability -->
+      <td>Drought</td>
+      <td>Leaf Guard</td>
+      <td>Protosynthesis</td>
+      <td>Flower Gift</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr> <!-- Nature -->
+      <td>Hasty</td>
+      <td>Lonely</td>
+      <td>Jolly</td>
+      <td>Modest</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr> <!-- Move 1 -->
+      <td>Overheat</td>
+      <td>Acrobatics</td>
+      <td>Spore</td>
+      <td>Hyper Voice</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr> <!-- Move 2 -->
+      <td>Solar Blade</td>
+      <td>Giga Drain</td>
+      <td>Sucker Punch</td>
+      <td>Giga Drain</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr> <!-- Move 3 -->
+      <td>Flare Blitz</td>
+      <td>Spore</td>
+      <td>Seed Bomb</td>
+      <td>Weather Ball</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr> <!-- Move 4 -->
+      <td>Stomping Tantrum</td>
+      <td>Growth</td>
+      <td>Knock Off</td>
+      <td>Fake Tears</td>
+      <td></td>
+      <td></td>
+    </tr>
+
+</tbody>
+</table>
+<table class="content-table">
+<caption class="caption-content">Kindler Bryant</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/weezing.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dugtrio.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+<tr> <!-- Species -->
+  <th>Weezing</th>
+  <th>Dugtrio</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>47</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Item -->
+  <td>Choice Scarf</td>
+  <td>Focus Band</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Ability -->
+  <td>Levitate</td>
+  <td>Arena Trap</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Nature -->
+  <td>Naive</td>
+  <td>Jolly</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 1 -->
+  <td>Memento</td>
+  <td>Earthquake</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 2 -->
+  <td>Flamethrower</td>
+  <td>Stone Edge</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 3 -->
+  <td>Explosion</td>
+  <td>Final Gambit</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 4 -->
+  <td></td>
+  <td>Foul Play</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<div>
+<div class="container">
+<h1 class="location">Route 111</h1>
+<div class="line">
+</div>
+</div>
+<table class="content-table">
+<caption class="caption-content">Cool Trainer Wilton - GAUNLET UNTIL BLACK BELT DAISUKE -</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/ninetales-alola.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/golem-alola.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/marowak-alola.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+<tr> <!-- Species -->
+  <th>Ninetales-Alola</th>
+  <th>Golem-Alola</th>
+  <th>Marowak-Alola</th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+<tr> <!-- Level -->
+  <td>44</td>
+  <td>43</td>
+  <td>44</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Item -->
+  <td>Ice Gem</td>
+  <td>Assault Vest</td>
+  <td>Thick Club</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Ability -->
+  <td>Ice Body</td>
+  <td>Magnet Pull</td>
+  <td>Rock Head</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Jolly</td>
+  <td>Jolly</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 1 -->
+  <td>Moonblast</td>
+  <td>Earthquake</td>
+  <td>Curse</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 2 -->
+  <td>Freeze-Dry</td>
+  <td>Head Smash</td>
+  <td>Detect</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 3 -->
+  <td>Icy Wind</td>
+  <td>Supercell Slam</td>
+  <td>Flare Blitz</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 4 -->
+  <td>Nasty Plot</td>
+  <td>Heat Crash</td>
+  <td>Explosion</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Cool Trainer Brooke</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/bombirdier.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tyrantrum.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/golurk.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+<tr> <!-- Species -->
+  <th>Bombirdier</th>
+  <th>Tyrantrum</th>
+  <th>Golurk</th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+<tr> <!-- Level -->
+  <td>44</td>
+  <td>45</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Item -->
+  <td>Rock Gem</td>
+  <td>Lum Berry</td>
+  <td>Punching Glove</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Ability -->
+  <td>Rocky Payload</td>
+  <td>Strong Jaw</td>
+  <td>No Guard</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Nature -->
+  <td>Jolly</td>
+  <td>Adamant</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 1 -->
+  <td>Brave Bird</td>
+  <td>Psychic Fangs</td>
+  <td>Dynamic Punch</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 2 -->
+  <td>Knock Off</td>
+  <td>Scale Chomp</td>
+  <td>High Horsepower</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 3 -->
+  <td>Rock Tomb</td>
+  <td>Ice Fang</td>
+  <td>Thunder Punch</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 4 -->
+  <td>Roost</td>
+  <td>Crunch</td>
+  <td>Shadow Punch</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Camper Beau</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/ambipom.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/kingler.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+<tr> <!-- Species -->
+  <th>Ambipom</th>
+  <th>Kingler</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+<tr> <!-- Level -->
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Item -->
+  <td>Life Orb</td>
+  <td>Bright Powder</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Ability -->
+  <td>Technician</td>
+  <td>Tough Claws</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Nature -->
+  <td>Jolly</td>
+  <td>Jolly</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 1 -->
+  <td>Rock Blast</td>
+  <td>Iron Head</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 2 -->
+  <td>Bullet Seed</td>
+  <td>Liquidation</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 3 -->
+  <td>Tail Slap</td>
+  <td>Superpower</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 4 -->
+  <td>Fake Out</td>
+  <td>Crush Claw</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Black Belt Daisuke</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/mienshao.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/falinks.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/heracross.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+<tr> <!-- Species -->
+  <th>Mienshao</th>
+  <th>Falinks</th>
+  <th>Heracross</th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>46</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Item -->
+  <td>Bug Gem</td>
+  <td>Lum Berry</td>
+  <td>Lum Berry</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Ability -->
+  <td>Regenerator</td>
+  <td>Defiant</td>
+  <td>Moxie</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Nature -->
+  <td>Naive</td>
+  <td>Careful</td>
+  <td>Jolly</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 1 -->
+  <td>U-Turn</td>
+  <td>No Retreat</td>
+  <td>Drain Punch</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 2 -->
+  <td>Focus Blast</td>
+  <td>Throat Chop</td>
+  <td>Megahorn</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 3 -->
+  <td>Knock Off</td>
+  <td>Zen Headbutt</td>
+  <td>Rock Tomb</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 4 -->
+  <td>Poison Jab</td>
+  <td>Close Combat</td>
+  <td>Facade</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Picnicker Becky - Perma Psychic Terrain -</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/indeedee-f.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/alcremie.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/magcargo.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/poliwrath.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+<tr> <!-- Species -->
+  <th>Indeedee-F</th>
+  <th>Alcremie</th>
+  <th>Magcargo</th>
+  <th>Poliwrath</th>
+  <th></th>
+  <th></th>
+</tr>
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>46</td>
+  <td>46</td>
+  <td>47</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Item -->
+  <td>Wise Glasses</td>
+  <td>Psychic Seed</td>
+  <td>Red Card</td>
+  <td>Sitrus Berry</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Ability -->
+  <td>Psychic Surge</td>
+  <td>Sweet Veil</td>
+  <td>Magma Armor</td>
+  <td>Water Absorb</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Bold</td>
+  <td>Timid</td>
+  <td>Jolly</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 1 -->
+  <td>Expanding Force</td>
+  <td>Stored Power</td>
+  <td>Shell Smash</td>
+  <td>Belly Drum</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 2 -->
+  <td>Hyper Voice</td>
+  <td>Alluring Voice</td>
+  <td>Nature Power</td>
+  <td>Jet Punch</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 3 -->
+  <td>None</td>
+  <td>Acid Armor</td>
+  <td>Fire Blast</td>
+  <td>Ice Punch</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr> <!-- Move 4 -->
+  <td>None</td>
+  <td>Recover</td>
+  <td>Earth Power</td>
+  <td>Drain Punch</td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+<div>
+<div class="container">
+<h1 class="location">Route 113</h1>
+<div class="line">
+</div>
+</div>
+<table class="content-table">
+<caption class="caption-content">Picnicker Lawrence & Pokemaniac Wyatt -</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/ursaring.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/lapras.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/staraptor.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/gothitelle.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Ursaring</th>
+  <th>Lapras</th>
+  <th></th>
+  <th></th>
+  <th>Staraptor</th>
+  <th>Gothitelle</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td></td>
+  <td>45</td>
+  <td>45</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Eviolite</td>
+  <td>Lum Berry</td>
+  <td></td>
+  <td></td>
+  <td>Clear Amulet</td>
+  <td>Expert Belt</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Unnerve</td>
+  <td>Shell Armor</td>
+  <td></td>
+  <td></td>
+  <td>Intimidate</td>
+  <td>Shadow Tag</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Adamant</td>
+  <td>Timid</td>
+  <td></td>
+  <td></td>
+  <td>Jolly</td>
+  <td>Timid</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Body Slam</td>
+  <td>Thunderbolt</td>
+  <td></td>
+  <td></td>
+  <td>Tailwind</td>
+  <td>Signal Beam</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Crunch</td>
+  <td>Hydro Pump</td>
+  <td></td>
+  <td></td>
+  <td>Brave Bird</td>
+  <td>Shadow Ball</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Protect</td>
+  <td>Freeze-Dry</td>
+  <td></td>
+  <td></td>
+  <td>Roost</td>
+  <td>Dark Pulse</td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Earthquake</td>
+  <td>Extrasensory</td>
+  <td></td>
+  <td></td>
+  <td>Double-Edge</td>
+  <td>Hypnosis</td>
+</tr>
+
+</tbody>
+</table>
+</div>
+<div>
+<table class="content-table">
+<caption class="caption-content">Youngster Jaylen</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/duraludon.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/raichu-alola.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/claydol.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Duraludon</th>
+  <th>Raichu-Alola</th>
+  <th>Claydol</th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>45</td>
+  <td>46</td>
+  <td>45</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Clear Amulet</td>
+  <td>Focus Sash</td>
+  <td>Weakness Policy</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Heavy Metal</td>
+  <td>Surge Surfer</td>
+  <td>Levitate</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Careful</td>
+  <td>Timid</td>
+  <td>Relaxed</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Body Press</td>
+  <td>Grass Knot</td>
+  <td>Drill Run</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Stealth Rock</td>
+  <td>Psychic</td>
+  <td>Cosmic Power</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Dragon Tail</td>
+  <td>Parabolic Charge</td>
+  <td>Stored Power</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Heavy Slam</td>
+  <td>Nasty Plot</td>
+  <td>Body Press</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Twins Tori & Tia</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/nidoking.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/nidoqueen.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/fearow.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/pidgeot.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Nidoking</th>
+  <th>Nidoqueen</th>
+  <th>Fearow</th>
+  <th>Pidgeot</th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>46</td>
+  <td>47</td>
+  <td>47</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Life Orb</td>
+  <td>Covert Cloak</td>
+  <td>Scope Lens</td>
+  <td>Lum Berry</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Sheer Force</td>
+  <td>Sheer Force</td>
+  <td>Sniper</td>
+  <td>Gale Wings</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Hasty</td>
+  <td>Timid</td>
+  <td>Jolly</td>
+  <td>Modest</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Poison Fang</td>
+  <td>Earth Power</td>
+  <td>Drill Peck</td>
+  <td>Hurricane</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Flamethrower</td>
+  <td>Shadow Ball</td>
+  <td>Drill Run</td>
+  <td>Thunderbolt</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Drill Run</td>
+  <td>Sludge Wave</td>
+  <td>Night Slash</td>
+  <td>Heat Wave</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Ice Beam</td>
+  <td>Thunder</td>
+  <td>Protect</td>
+  <td>Aura Sphere</td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Ninja Boy Bushi</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/greninja.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/ceruledge.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/qwilfish.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Greninja</th>
+  <th>Ceruledge</th>
+  <th>Qwilfish</th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>47</td>
+  <td>47</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Focus Sash</td>
+  <td>Power Herb</td>
+  <td>Quick Claw</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Protean</td>
+  <td>Weak Armor</td>
+  <td>Intimidate</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Hasty</td>
+  <td>Jolly</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Spikes</td>
+  <td>Swords Dance</td>
+  <td>Explosion</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Water Shuriken</td>
+  <td>Solar Blade</td>
+  <td>Gunk Shot</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Grass Knot</td>
+  <td>Bitter Blade</td>
+  <td>Waterfall</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Low Kick</td>
+  <td>Shadow Sneak</td>
+  <td>Aqua Jet</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Lady Madeline</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/politoed.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/armaldo.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/coalossal.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Politoed</th>
+  <th>Armaldo</th>
+  <th>Coalossal</th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>46</td>
+  <td>50</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Leftovers</td>
+  <td>Mystic Water</td>
+  <td>Utility Umbrella</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Drizzle</td>
+  <td>Swift Swim</td>
+  <td>Steam Engine</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Bold</td>
+  <td>Jolly</td>
+  <td>Timid</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Toxic</td>
+  <td>Skitter Smack</td>
+  <td>Scorching Sands</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Icy Wind</td>
+  <td>Liquidation</td>
+  <td>Flamethrower</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Muddy Water</td>
+  <td>Cross Poison</td>
+  <td>Power Gem</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Sweet Kiss</td>
+  <td>Rock Slide</td>
+  <td>Tar Shot</td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Sailor Dillon</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tatsugiri.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dondozo.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Tatsugiri-Curly</th>
+  <th>Dondozo</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Life Orb</td>
+  <td>Leftovers</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Commander</td>
+  <td>Oblivious</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Icy Wind</td>
+  <td>Liquidation</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Draco Meteor</td>
+  <td>Earthquake</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Muddy Water</td>
+  <td>Order Up</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Recover</td>
+  <td>Ice Fang</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Lady Sophie & Bianca</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/porygon2.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/sinistcha.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hatterene.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/perrserker.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/rhydon.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Porygon2</th>
+  <th>Sinistcha</th>
+  <th>Hatterene</th>
+  <th></th>
+  <th>Perrserker</th>
+  <th>Rhydon</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td>46</td>
+  <td>45</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Eviolite</td>
+  <td>Grass Gem</td>
+  <td>Fairy Gem</td>
+  <td></td>
+  <td>Occa Berry</td>
+  <td>Choice Band</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Download</td>
+  <td>Hospitality</td>
+  <td>Magic Bounce</td>
+  <td></td>
+  <td>Tough Claws</td>
+  <td>Rock Head</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Quiet</td>
+  <td>Relaxed</td>
+  <td>Modest</td>
+  <td></td>
+  <td>Sassy</td>
+  <td>Brave</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Recover</td>
+  <td>Trick</td>
+  <td>Trick Room</td>
+  <td></td>
+  <td>Knock Off</td>
+  <td>Head Smash</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Tri Attack</td>
+  <td>Matcha Gotcha</td>
+  <td>Psychic</td>
+  <td></td>
+  <td>Iron Head</td>
+  <td>Tectonic Rage</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Psychic Noise</td>
+  <td>Hex</td>
+  <td>Dazzling Gleam</td>
+  <td></td>
+  <td>Fake Out</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Volt Switch</td>
+  <td>Shadow Ball</td>
+  <td>Protect</td>
+  <td></td>
+  <td>Metal Sound</td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Leader Jasmine</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/bronzong.png" alt=""></img></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/empoleon.png" alt=""></img></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/irontreads.png" alt=""></img></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/ampharos.png" alt=""></img></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tinkaton.png" alt=""></img></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/aggron-mega.png" alt=""></img></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Bronzong</th>
+  <th>Empoleon</th>
+  <th>Iron Treads</th>
+  <th>Ampharos</th>
+  <th>Tinkaton</th>
+  <th>Aggron-Mega</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>43</td>
+  <td>43</td>
+  <td>42</td>
+  <td>44</td>
+  <td>43</td>
+  <td>44</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Damp Rock</td>
+  <td>Quick Claw</td>
+  <td>Assault Vest</td>
+  <td>Life Orb</td>
+  <td>Iapapa Berry</td>
+  <td>Aggronite</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Levitate</td>
+  <td>Clear Body</td>
+  <td>Quark Drive</td>
+  <td>Sheer Force</td>
+  <td>Pickpocket</td>
+  <td>Filter</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Modest</td>
+  <td>Relaxed</td>
+  <td>Adamant</td>
+  <td>Timid</td>
+  <td>Impish</td>
+  <td>Adamant</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Rain Dance</td>
+  <td>Drill Peck</td>
+  <td>Rapid Spin</td>
+  <td>Power Gem</td>
+  <td>Swords Dance</td>
+  <td>Heavy Slam</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Thunder</td>
+  <td>Scald</td>
+  <td>Knock Off</td>
+  <td>Energy Ball</td>
+  <td>Gigaton Hammer</td>
+  <td>Heat Crash</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Flash Cannon</td>
+  <td>Roost</td>
+  <td>Stomping Tantrum</td>
+  <td>Thunderbolt</td>
+  <td>Ice Hammer</td>
+  <td>Body Press</td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Future Sight</td>
+  <td>Earthquake</td>
+  <td>Iron Head</td>
+  <td>Dragon Pulse</td>
+  <td>Play Rough</td>
+  <td>Earthquake</td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Sailor Dillon</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tatsugiri.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dondozo.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Tatsugiri-Curly</th>
+  <th>Dondozo</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Life Orb</td>
+  <td>Leftovers</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Commander</td>
+  <td>Oblivious</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Icy Wind</td>
+  <td>Liquidation</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Draco Meteor</td>
+  <td>Earthquake</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Muddy Water</td>
+  <td>Order Up</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Recover</td>
+  <td>Ice Fang</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Lady Sophie & Bianca</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/porygon2.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/sinistcha.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hatterene.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/perrserker.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/rhydon.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Porygon2</th>
+  <th>Sinistcha</th>
+  <th>Hatterene</th>
+  <th></th>
+  <th>Perrserker</th>
+  <th>Rhydon</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td>46</td>
+  <td>45</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Eviolite</td>
+  <td>Grass Gem</td>
+  <td>Fairy Gem</td>
+  <td></td>
+  <td>Occa Berry</td>
+  <td>Choice Band</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Download</td>
+  <td>Hospitality</td>
+  <td>Magic Bounce</td>
+  <td></td>
+  <td>Tough Claws</td>
+  <td>Rock Head</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Quiet</td>
+  <td>Relaxed</td>
+  <td>Modest</td>
+  <td></td>
+  <td>Sassy</td>
+  <td>Brave</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Recover</td>
+  <td>Trick</td>
+  <td>Trick Room</td>
+  <td></td>
+  <td>Knock Off</td>
+  <td>Head Smash</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Tri Attack</td>
+  <td>Matcha Gotcha</td>
+  <td>Psychic</td>
+  <td></td>
+  <td>Iron Head</td>
+  <td>Tectonic Rage</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Psychic Noise</td>
+  <td>Hex</td>
+  <td>Dazzling Gleam</td>
+  <td></td>
+  <td>Fake Out</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Volt Switch</td>
+  <td>Shadow Ball</td>
+  <td>Protect</td>
+  <td></td>
+  <td>Metal Sound</td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Sailor Dillon</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tatsugiri.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dondozo.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Tatsugiri-Curly</th>
+  <th>Dondozo</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Life Orb</td>
+  <td>Leftovers</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Commander</td>
+  <td>Oblivious</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Icy Wind</td>
+  <td>Liquidation</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Draco Meteor</td>
+  <td>Earthquake</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Muddy Water</td>
+  <td>Order Up</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Recover</td>
+  <td>Ice Fang</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Lady Sophie & Bianca</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/porygon2.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/sinistcha.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hatterene.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/perrserker.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/rhydon.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Porygon2</th>
+  <th>Sinistcha</th>
+  <th>Hatterene</th>
+  <th></th>
+  <th>Perrserker</th>
+  <th>Rhydon</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td>46</td>
+  <td>45</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Eviolite</td>
+  <td>Grass Gem</td>
+  <td>Fairy Gem</td>
+  <td></td>
+  <td>Occa Berry</td>
+  <td>Choice Band</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Download</td>
+  <td>Hospitality</td>
+  <td>Magic Bounce</td>
+  <td></td>
+  <td>Tough Claws</td>
+  <td>Rock Head</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Quiet</td>
+  <td>Relaxed</td>
+  <td>Modest</td>
+  <td></td>
+  <td>Sassy</td>
+  <td>Brave</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Recover</td>
+  <td>Trick</td>
+  <td>Trick Room</td>
+  <td></td>
+  <td>Knock Off</td>
+  <td>Head Smash</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Tri Attack</td>
+  <td>Matcha Gotcha</td>
+  <td>Psychic</td>
+  <td></td>
+  <td>Iron Head</td>
+  <td>Tectonic Rage</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Psychic Noise</td>
+  <td>Hex</td>
+  <td>Dazzling Gleam</td>
+  <td></td>
+  <td>Fake Out</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Volt Switch</td>
+  <td>Shadow Ball</td>
+  <td>Protect</td>
+  <td></td>
+  <td>Metal Sound</td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Sailor Dillon</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tatsugiri.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dondozo.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Tatsugiri-Curly</th>
+  <th>Dondozo</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Life Orb</td>
+  <td>Leftovers</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Commander</td>
+  <td>Oblivious</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Icy Wind</td>
+  <td>Liquidation</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Draco Meteor</td>
+  <td>Earthquake</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Muddy Water</td>
+  <td>Order Up</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Recover</td>
+  <td>Ice Fang</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Lady Sophie & Bianca</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/porygon2.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/sinistcha.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hatterene.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/perrserker.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/rhydon.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Porygon2</th>
+  <th>Sinistcha</th>
+  <th>Hatterene</th>
+  <th></th>
+  <th>Perrserker</th>
+  <th>Rhydon</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td>46</td>
+  <td>45</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Eviolite</td>
+  <td>Grass Gem</td>
+  <td>Fairy Gem</td>
+  <td></td>
+  <td>Occa Berry</td>
+  <td>Choice Band</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Download</td>
+  <td>Hospitality</td>
+  <td>Magic Bounce</td>
+  <td></td>
+  <td>Tough Claws</td>
+  <td>Rock Head</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Quiet</td>
+  <td>Relaxed</td>
+  <td>Modest</td>
+  <td></td>
+  <td>Sassy</td>
+  <td>Brave</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Recover</td>
+  <td>Trick</td>
+  <td>Trick Room</td>
+  <td></td>
+  <td>Knock Off</td>
+  <td>Head Smash</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Tri Attack</td>
+  <td>Matcha Gotcha</td>
+  <td>Psychic</td>
+  <td></td>
+  <td>Iron Head</td>
+  <td>Tectonic Rage</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Psychic Noise</td>
+  <td>Hex</td>
+  <td>Dazzling Gleam</td>
+  <td></td>
+  <td>Fake Out</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Volt Switch</td>
+  <td>Shadow Ball</td>
+  <td>Protect</td>
+  <td></td>
+  <td>Metal Sound</td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Sailor Dillon</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tatsugiri.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dondozo.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Tatsugiri-Curly</th>
+  <th>Dondozo</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Life Orb</td>
+  <td>Leftovers</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Commander</td>
+  <td>Oblivious</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Icy Wind</td>
+  <td>Liquidation</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Draco Meteor</td>
+  <td>Earthquake</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Muddy Water</td>
+  <td>Order Up</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Recover</td>
+  <td>Ice Fang</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Lady Sophie & Bianca</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/porygon2.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/sinistcha.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hatterene.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/perrserker.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/rhydon.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Porygon2</th>
+  <th>Sinistcha</th>
+  <th>Hatterene</th>
+  <th></th>
+  <th>Perrserker</th>
+  <th>Rhydon</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td>46</td>
+  <td>45</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Eviolite</td>
+  <td>Grass Gem</td>
+  <td>Fairy Gem</td>
+  <td></td>
+  <td>Occa Berry</td>
+  <td>Choice Band</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Download</td>
+  <td>Hospitality</td>
+  <td>Magic Bounce</td>
+  <td></td>
+  <td>Tough Claws</td>
+  <td>Rock Head</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Quiet</td>
+  <td>Relaxed</td>
+  <td>Modest</td>
+  <td></td>
+  <td>Sassy</td>
+  <td>Brave</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Recover</td>
+  <td>Trick</td>
+  <td>Trick Room</td>
+  <td></td>
+  <td>Knock Off</td>
+  <td>Head Smash</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Tri Attack</td>
+  <td>Matcha Gotcha</td>
+  <td>Psychic</td>
+  <td></td>
+  <td>Iron Head</td>
+  <td>Tectonic Rage</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Psychic Noise</td>
+  <td>Hex</td>
+  <td>Dazzling Gleam</td>
+  <td></td>
+  <td>Fake Out</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Volt Switch</td>
+  <td>Shadow Ball</td>
+  <td>Protect</td>
+  <td></td>
+  <td>Metal Sound</td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Sailor Dillon</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tatsugiri.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dondozo.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Tatsugiri-Curly</th>
+  <th>Dondozo</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Life Orb</td>
+  <td>Leftovers</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Commander</td>
+  <td>Oblivious</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Icy Wind</td>
+  <td>Liquidation</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Draco Meteor</td>
+  <td>Earthquake</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Muddy Water</td>
+  <td>Order Up</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Recover</td>
+  <td>Ice Fang</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Lady Sophie & Bianca</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/porygon2.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/sinistcha.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hatterene.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/perrserker.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/rhydon.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Porygon2</th>
+  <th>Sinistcha</th>
+  <th>Hatterene</th>
+  <th></th>
+  <th>Perrserker</th>
+  <th>Rhydon</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td>46</td>
+  <td>45</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Eviolite</td>
+  <td>Grass Gem</td>
+  <td>Fairy Gem</td>
+  <td></td>
+  <td>Occa Berry</td>
+  <td>Choice Band</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Download</td>
+  <td>Hospitality</td>
+  <td>Magic Bounce</td>
+  <td></td>
+  <td>Tough Claws</td>
+  <td>Rock Head</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Quiet</td>
+  <td>Relaxed</td>
+  <td>Modest</td>
+  <td></td>
+  <td>Sassy</td>
+  <td>Brave</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Recover</td>
+  <td>Trick</td>
+  <td>Trick Room</td>
+  <td></td>
+  <td>Knock Off</td>
+  <td>Head Smash</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Tri Attack</td>
+  <td>Matcha Gotcha</td>
+  <td>Psychic</td>
+  <td></td>
+  <td>Iron Head</td>
+  <td>Tectonic Rage</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Psychic Noise</td>
+  <td>Hex</td>
+  <td>Dazzling Gleam</td>
+  <td></td>
+  <td>Fake Out</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Volt Switch</td>
+  <td>Shadow Ball</td>
+  <td>Protect</td>
+  <td></td>
+  <td>Metal Sound</td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Sailor Dillon</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tatsugiri.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dondozo.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Tatsugiri-Curly</th>
+  <th>Dondozo</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Life Orb</td>
+  <td>Leftovers</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Commander</td>
+  <td>Oblivious</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Icy Wind</td>
+  <td>Liquidation</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Draco Meteor</td>
+  <td>Earthquake</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Muddy Water</td>
+  <td>Order Up</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Recover</td>
+  <td>Ice Fang</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Lady Sophie & Bianca</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/porygon2.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/sinistcha.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hatterene.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/perrserker.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/rhydon.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Porygon2</th>
+  <th>Sinistcha</th>
+  <th>Hatterene</th>
+  <th></th>
+  <th>Perrserker</th>
+  <th>Rhydon</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td>46</td>
+  <td>45</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Eviolite</td>
+  <td>Grass Gem</td>
+  <td>Fairy Gem</td>
+  <td></td>
+  <td>Occa Berry</td>
+  <td>Choice Band</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Download</td>
+  <td>Hospitality</td>
+  <td>Magic Bounce</td>
+  <td></td>
+  <td>Tough Claws</td>
+  <td>Rock Head</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Quiet</td>
+  <td>Relaxed</td>
+  <td>Modest</td>
+  <td></td>
+  <td>Sassy</td>
+  <td>Brave</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Recover</td>
+  <td>Trick</td>
+  <td>Trick Room</td>
+  <td></td>
+  <td>Knock Off</td>
+  <td>Head Smash</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Tri Attack</td>
+  <td>Matcha Gotcha</td>
+  <td>Psychic</td>
+  <td></td>
+  <td>Iron Head</td>
+  <td>Tectonic Rage</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Psychic Noise</td>
+  <td>Hex</td>
+  <td>Dazzling Gleam</td>
+  <td></td>
+  <td>Fake Out</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Volt Switch</td>
+  <td>Shadow Ball</td>
+  <td>Protect</td>
+  <td></td>
+  <td>Metal Sound</td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Sailor Dillon</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tatsugiri.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dondozo.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Tatsugiri-Curly</th>
+  <th>Dondozo</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Life Orb</td>
+  <td>Leftovers</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Commander</td>
+  <td>Oblivious</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Icy Wind</td>
+  <td>Liquidation</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Draco Meteor</td>
+  <td>Earthquake</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Muddy Water</td>
+  <td>Order Up</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Recover</td>
+  <td>Ice Fang</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Lady Sophie & Bianca</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/porygon2.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/sinistcha.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hatterene.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/perrserker.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/rhydon.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Porygon2</th>
+  <th>Sinistcha</th>
+  <th>Hatterene</th>
+  <th></th>
+  <th>Perrserker</th>
+  <th>Rhydon</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td>46</td>
+  <td>45</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Eviolite</td>
+  <td>Grass Gem</td>
+  <td>Fairy Gem</td>
+  <td></td>
+  <td>Occa Berry</td>
+  <td>Choice Band</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Download</td>
+  <td>Hospitality</td>
+  <td>Magic Bounce</td>
+  <td></td>
+  <td>Tough Claws</td>
+  <td>Rock Head</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Quiet</td>
+  <td>Relaxed</td>
+  <td>Modest</td>
+  <td></td>
+  <td>Sassy</td>
+  <td>Brave</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Recover</td>
+  <td>Trick</td>
+  <td>Trick Room</td>
+  <td></td>
+  <td>Knock Off</td>
+  <td>Head Smash</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Tri Attack</td>
+  <td>Matcha Gotcha</td>
+  <td>Psychic</td>
+  <td></td>
+  <td>Iron Head</td>
+  <td>Tectonic Rage</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Psychic Noise</td>
+  <td>Hex</td>
+  <td>Dazzling Gleam</td>
+  <td></td>
+  <td>Fake Out</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Volt Switch</td>
+  <td>Shadow Ball</td>
+  <td>Protect</td>
+  <td></td>
+  <td>Metal Sound</td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Sailor Dillon</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tatsugiri.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dondozo.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Tatsugiri-Curly</th>
+  <th>Dondozo</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Life Orb</td>
+  <td>Leftovers</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Commander</td>
+  <td>Oblivious</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Icy Wind</td>
+  <td>Liquidation</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Draco Meteor</td>
+  <td>Earthquake</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Muddy Water</td>
+  <td>Order Up</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Recover</td>
+  <td>Ice Fang</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Lady Sophie & Bianca</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/porygon2.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/sinistcha.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hatterene.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/perrserker.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/rhydon.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Porygon2</th>
+  <th>Sinistcha</th>
+  <th>Hatterene</th>
+  <th></th>
+  <th>Perrserker</th>
+  <th>Rhydon</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td>46</td>
+  <td>45</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Eviolite</td>
+  <td>Grass Gem</td>
+  <td>Fairy Gem</td>
+  <td></td>
+  <td>Occa Berry</td>
+  <td>Choice Band</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Download</td>
+  <td>Hospitality</td>
+  <td>Magic Bounce</td>
+  <td></td>
+  <td>Tough Claws</td>
+  <td>Rock Head</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Quiet</td>
+  <td>Relaxed</td>
+  <td>Modest</td>
+  <td></td>
+  <td>Sassy</td>
+  <td>Brave</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Recover</td>
+  <td>Trick</td>
+  <td>Trick Room</td>
+  <td></td>
+  <td>Knock Off</td>
+  <td>Head Smash</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Tri Attack</td>
+  <td>Matcha Gotcha</td>
+  <td>Psychic</td>
+  <td></td>
+  <td>Iron Head</td>
+  <td>Tectonic Rage</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Psychic Noise</td>
+  <td>Hex</td>
+  <td>Dazzling Gleam</td>
+  <td></td>
+  <td>Fake Out</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Volt Switch</td>
+  <td>Shadow Ball</td>
+  <td>Protect</td>
+  <td></td>
+  <td>Metal Sound</td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Sailor Dillon</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tatsugiri.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dondozo.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Tatsugiri-Curly</th>
+  <th>Dondozo</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Life Orb</td>
+  <td>Leftovers</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Commander</td>
+  <td>Oblivious</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Icy Wind</td>
+  <td>Liquidation</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Draco Meteor</td>
+  <td>Earthquake</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Muddy Water</td>
+  <td>Order Up</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Recover</td>
+  <td>Ice Fang</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Lady Sophie & Bianca</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/porygon2.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/sinistcha.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hatterene.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/perrserker.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/rhydon.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Porygon2</th>
+  <th>Sinistcha</th>
+  <th>Hatterene</th>
+  <th></th>
+  <th>Perrserker</th>
+  <th>Rhydon</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td>46</td>
+  <td>45</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Eviolite</td>
+  <td>Grass Gem</td>
+  <td>Fairy Gem</td>
+  <td></td>
+  <td>Occa Berry</td>
+  <td>Choice Band</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Download</td>
+  <td>Hospitality</td>
+  <td>Magic Bounce</td>
+  <td></td>
+  <td>Tough Claws</td>
+  <td>Rock Head</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Quiet</td>
+  <td>Relaxed</td>
+  <td>Modest</td>
+  <td></td>
+  <td>Sassy</td>
+  <td>Brave</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Recover</td>
+  <td>Trick</td>
+  <td>Trick Room</td>
+  <td></td>
+  <td>Knock Off</td>
+  <td>Head Smash</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Tri Attack</td>
+  <td>Matcha Gotcha</td>
+  <td>Psychic</td>
+  <td></td>
+  <td>Iron Head</td>
+  <td>Tectonic Rage</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Psychic Noise</td>
+  <td>Hex</td>
+  <td>Dazzling Gleam</td>
+  <td></td>
+  <td>Fake Out</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Volt Switch</td>
+  <td>Shadow Ball</td>
+  <td>Protect</td>
+  <td></td>
+  <td>Metal Sound</td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Sailor Dillon</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tatsugiri.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dondozo.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Tatsugiri-Curly</th>
+  <th>Dondozo</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Life Orb</td>
+  <td>Leftovers</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Commander</td>
+  <td>Oblivious</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Icy Wind</td>
+  <td>Liquidation</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Draco Meteor</td>
+  <td>Earthquake</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Muddy Water</td>
+  <td>Order Up</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Recover</td>
+  <td>Ice Fang</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Lady Sophie & Bianca</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/porygon2.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/sinistcha.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hatterene.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/perrserker.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/rhydon.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Porygon2</th>
+  <th>Sinistcha</th>
+  <th>Hatterene</th>
+  <th></th>
+  <th>Perrserker</th>
+  <th>Rhydon</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td>46</td>
+  <td>45</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Eviolite</td>
+  <td>Grass Gem</td>
+  <td>Fairy Gem</td>
+  <td></td>
+  <td>Occa Berry</td>
+  <td>Choice Band</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Download</td>
+  <td>Hospitality</td>
+  <td>Magic Bounce</td>
+  <td></td>
+  <td>Tough Claws</td>
+  <td>Rock Head</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Quiet</td>
+  <td>Relaxed</td>
+  <td>Modest</td>
+  <td></td>
+  <td>Sassy</td>
+  <td>Brave</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Recover</td>
+  <td>Trick</td>
+  <td>Trick Room</td>
+  <td></td>
+  <td>Knock Off</td>
+  <td>Head Smash</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Tri Attack</td>
+  <td>Matcha Gotcha</td>
+  <td>Psychic</td>
+  <td></td>
+  <td>Iron Head</td>
+  <td>Tectonic Rage</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Psychic Noise</td>
+  <td>Hex</td>
+  <td>Dazzling Gleam</td>
+  <td></td>
+  <td>Fake Out</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Volt Switch</td>
+  <td>Shadow Ball</td>
+  <td>Protect</td>
+  <td></td>
+  <td>Metal Sound</td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Sailor Dillon</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tatsugiri.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dondozo.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Tatsugiri-Curly</th>
+  <th>Dondozo</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Life Orb</td>
+  <td>Leftovers</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Commander</td>
+  <td>Oblivious</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Icy Wind</td>
+  <td>Liquidation</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Draco Meteor</td>
+  <td>Earthquake</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Muddy Water</td>
+  <td>Order Up</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Recover</td>
+  <td>Ice Fang</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Lady Sophie & Bianca</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/porygon2.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/sinistcha.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hatterene.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/perrserker.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/rhydon.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Porygon2</th>
+  <th>Sinistcha</th>
+  <th>Hatterene</th>
+  <th></th>
+  <th>Perrserker</th>
+  <th>Rhydon</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td>46</td>
+  <td>45</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Eviolite</td>
+  <td>Grass Gem</td>
+  <td>Fairy Gem</td>
+  <td></td>
+  <td>Occa Berry</td>
+  <td>Choice Band</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Download</td>
+  <td>Hospitality</td>
+  <td>Magic Bounce</td>
+  <td></td>
+  <td>Tough Claws</td>
+  <td>Rock Head</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Quiet</td>
+  <td>Relaxed</td>
+  <td>Modest</td>
+  <td></td>
+  <td>Sassy</td>
+  <td>Brave</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Recover</td>
+  <td>Trick</td>
+  <td>Trick Room</td>
+  <td></td>
+  <td>Knock Off</td>
+  <td>Head Smash</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Tri Attack</td>
+  <td>Matcha Gotcha</td>
+  <td>Psychic</td>
+  <td></td>
+  <td>Iron Head</td>
+  <td>Tectonic Rage</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Psychic Noise</td>
+  <td>Hex</td>
+  <td>Dazzling Gleam</td>
+  <td></td>
+  <td>Fake Out</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Volt Switch</td>
+  <td>Shadow Ball</td>
+  <td>Protect</td>
+  <td></td>
+  <td>Metal Sound</td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Sailor Dillon</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tatsugiri.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dondozo.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Tatsugiri-Curly</th>
+  <th>Dondozo</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Life Orb</td>
+  <td>Leftovers</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Commander</td>
+  <td>Oblivious</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Icy Wind</td>
+  <td>Liquidation</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Draco Meteor</td>
+  <td>Earthquake</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Muddy Water</td>
+  <td>Order Up</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Recover</td>
+  <td>Ice Fang</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Lady Sophie & Bianca</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/porygon2.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/sinistcha.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hatterene.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/perrserker.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/rhydon.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Porygon2</th>
+  <th>Sinistcha</th>
+  <th>Hatterene</th>
+  <th></th>
+  <th>Perrserker</th>
+  <th>Rhydon</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td>46</td>
+  <td>45</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Eviolite</td>
+  <td>Grass Gem</td>
+  <td>Fairy Gem</td>
+  <td></td>
+  <td>Occa Berry</td>
+  <td>Choice Band</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Download</td>
+  <td>Hospitality</td>
+  <td>Magic Bounce</td>
+  <td></td>
+  <td>Tough Claws</td>
+  <td>Rock Head</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Quiet</td>
+  <td>Relaxed</td>
+  <td>Modest</td>
+  <td></td>
+  <td>Sassy</td>
+  <td>Brave</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Recover</td>
+  <td>Trick</td>
+  <td>Trick Room</td>
+  <td></td>
+  <td>Knock Off</td>
+  <td>Head Smash</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Tri Attack</td>
+  <td>Matcha Gotcha</td>
+  <td>Psychic</td>
+  <td></td>
+  <td>Iron Head</td>
+  <td>Tectonic Rage</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Psychic Noise</td>
+  <td>Hex</td>
+  <td>Dazzling Gleam</td>
+  <td></td>
+  <td>Fake Out</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Volt Switch</td>
+  <td>Shadow Ball</td>
+  <td>Protect</td>
+  <td></td>
+  <td>Metal Sound</td>
+  <td></td>
+</tr>
+
+
+</tbody></tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Sailor Dillon</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tatsugiri.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/dondozo.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Tatsugiri-Curly</th>
+  <th>Dondozo</th>
+  <th></th>
+  <th></th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>47</td>
+  <td>46</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Life Orb</td>
+  <td>Leftovers</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Commander</td>
+  <td>Oblivious</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Timid</td>
+  <td>Adamant</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Icy Wind</td>
+  <td>Liquidation</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Draco Meteor</td>
+  <td>Earthquake</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Muddy Water</td>
+  <td>Order Up</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Recover</td>
+  <td>Ice Fang</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+<table class="content-table">
+<caption class="caption-content">Lady Sophie & Bianca</caption>
+<tbody>
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/porygon2.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/sinistcha.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hatterene.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/perrserker.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/rhydon.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Porygon2</th>
+  <th>Sinistcha</th>
+  <th>Hatterene</th>
+  <th></th>
+  <th>Perrserker</th>
+  <th>Rhydon</th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>46</td>
+  <td>45</td>
+  <td>45</td>
+  <td></td>
+  <td>46</td>
+  <td>45</td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Eviolite</td>
+  <td>Grass Gem</td>
+  <td>Fairy Gem</td>
+  <td></td>
+  <td>Occa Berry</td>
+  <td>Choice Band</td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Download</td>
+  <td>Hospitality</td>
+  <td>Magic Bounce</td>
+  <td></td>
+  <td>Tough Claws</td>
+  <td>Rock Head</td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Quiet</td>
+  <td>Relaxed</td>
+  <td>Modest</td>
+  <td></td>
+  <td>Sassy</td>
+  <td>Brave</td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Recover</td>
+  <td>Trick</td>
+  <td>Trick Room</td>
+  <td></td>
+  <td>Knock Off</td>
+  <td>Head Smash</td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Tri Attack</td>
+  <td>Matcha Gotcha</td>
+  <td>Psychic</td>
+  <td></td>
+  <td>Iron Head</td>
+  <td>Tectonic Rage</td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Psychic Noise</td>
+  <td>Hex</td>
+  <td>Dazzling Gleam</td>
+  <td></td>
+  <td>Fake Out</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Volt Switch</td>
+  <td>Shadow Ball</td>
+  <td>Protect</td>
+  <td></td>
+  <td>Metal Sound</td>
+  <td></td>
+</tr>
+
+
+</tbody>
+</table>
+</div>
+</table>
+</body>
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  const select = document.getElementById('theme-select');
+  const root = document.documentElement;
+
+  if (!select) return;
+
+  // Sync dropdown with saved theme
+  const saved = localStorage.getItem('porydex-theme') || 'dark';
+  select.value = saved;
+
+  select.addEventListener('change', () => {
+    const theme = select.value;
+
+    root.classList.remove('dark-mode', 'theme-azure');
+
+    if (theme === 'dark') {
+      root.classList.add('dark-mode');
+    } else if (theme === 'azure') {
+      root.classList.add('dark-mode', 'theme-azure');
+    }
+
+    localStorage.setItem('porydex-theme', theme);
+  });
+});
+
+</script>
+</tbody>
+</table>
+</html>
