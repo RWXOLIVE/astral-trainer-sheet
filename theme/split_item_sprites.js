@@ -82,8 +82,9 @@ const SPLIT_DIRECT_ITEM_ICON_URLS = {
 'garchompite z': 'https://archives.bulbagarden.net/wiki/Special:Redirect/file/Bag_Garchompite_Z_ZA_Sprite.png',
 'lure': 'https://archives.bulbagarden.net/media/upload/9/90/Bag_Lure_Sprite.png',
 'utility umbrella': 'https://archives.bulbagarden.net/media/upload/2/2f/Bag_Utility_Umbrella_SV_Sprite.png',
-'clear amulet': 'https://archives.bulbagarden.net/media/upload/f/fa/Bag_Clear_Amulet_SV_Sprite.png',
-'leek': 'https://archives.bulbagarden.net/media/upload/8/89/Bag_Leek_ZA_Sprite.png',
+  'clear amulet': 'https://archives.bulbagarden.net/media/upload/f/fa/Bag_Clear_Amulet_SV_Sprite.png',
+  'leek': 'https://archives.bulbagarden.net/media/upload/8/89/Bag_Leek_ZA_Sprite.png',
+  'fairy feather': 'https://archives.bulbagarden.net/media/upload/9/97/Bag_Fairy_Feather_SV_Sprite.png',
 
 };
 const SPLIT_MINT_ICON_FILES = {
