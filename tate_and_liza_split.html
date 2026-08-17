@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html><head>
+	<!-- Apply saved theme ASAP to avoid flash -->
+  <script>
+(() => {
+  const saved = localStorage.getItem('porydex-theme') || 'dark';
+  const root = document.documentElement;
+
+  root.classList.remove('dark-mode', 'theme-azure', 'theme-dex', 'theme-dark', 'theme-light');
+
+  if (saved === 'dark') {
+    root.classList.add('dark-mode');
+  } else if (saved === 'azure') {
+    root.classList.add('dark-mode', 'theme-azure');
+  } else if (saved === 'dex') {
+    root.classList.add('theme-dex');
+  }
+})();
+</script>
+
+	<meta charset="utf-8" />
+	<!--<link rel="icon" type="image/ico" href="images/favicon.ico">-->
+    <link rel="icon" type="image/gif" href="images/tepig.gif"  >
+	<title>Pok&eacute;dex - Pok&eacute;mon Showdown</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8" />
+	<link rel="stylesheet" href="https://play.pokemonshowdown.com/style/font-awesome.css" />
+	<link rel="stylesheet" href="theme/panels.css" />
+	<link rel="stylesheet" href="theme/main.css" />
+	<link rel="stylesheet" href="theme/trainer_sheet.css" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="https://play.pokemonshowdown.com/style/utilichart.css?b359" />
+	<link rel="stylesheet" href="theme/pokedex.css" />
+
+	<!-- Workarounds for IE bugs to display trees correctly. -->
+	<!--[if lte IE 6]><style> li.tree { height: 1px; } </style><![endif]-->
+	<!--[if IE 7]><style> li.tree { zoom: 1; } </style><![endif]-->
+
+</head><body>
+
+	<div class="pfx-topbar">
+		<div class="header">
+			<ul class="nav">
+				<li><a class="button nav-first" href="https://github.com/lhearachel/porydex"><img src="images/pokemonshowdownbeta.png" alt="Pokémon Showdown! (beta)" />Github</a></li>
+				<li><a class="button" href="https://astral-dex.vercel.app/">Pokédex</a></li>
+				<li><a class="button" href="https://astral-calc.vercel.app/">Calculator</a></li>
+				<li><a class="button" href="https://discord.gg/fZWBmEZeZx">Discord</a></li>
+        		<li><a class="button" href="https://drive.google.com/drive/folders/1X05r8shCeFDpyGCsSXXkryZ4Bt5pWd5B?usp=sharing">Google Drive</a></li>
+                <li><a class="button nav-last" href="astral-trainer-sheet.vercel.app">Trainer Sheet</a></li>
+                <div class="theme-picker">
+                <label for="theme-select">Theme</label>
+                <select id="theme-select">
+                  <option value="light">Light</option>
+                  <option value="dark">Dark</option>
+                  <option value="azure">Night (Blue)</option>
+                  <option value="dex">Dex</option>
+                </select>
+              </div>
+
+			</ul>
+			<div style="clear:both"></div>
+		</div>
+	</div>
+    <div class="navbar">
+    <ul>
+        <li><a href="resources.html">Home</a></li>
+        <li>
+          <a href="roxanne-brock_split.html">Roxanne/Brock (20)</a>
+          <div class="split-cap-dropdown">
+            <span>Lady CindyLv. 16</span>
+          </div>
+        </li>
+        <li><a href="brawly_split.html">Brawly (25)</a></li>
+        <li><a href="norman_split.html">Norman (40)</a></li>
+        <li>
+          <a href="elesa_split.html">Elesa/Jasmine (50)</a>
+          <div class="split-cap-dropdown">
+            <span>Team Plasma N &amp; Ghetsis Lv. 46</span>
+          </div>
+        </li>
+        <li>
+          <a href="blaine_split.html">Flannery &amp; Blaine (62)</a>
+          <div class="split-cap-dropdown">
+            <span>Rival Lyra Lv. 55</span>
+            <span>Mt Chimney Maxie Lv. 61</span>
+          </div>
+        </li>
+        <li>
+          <a href="winona_split.html">Winona (76)</a>
+          <div class="split-cap-dropdown">
+            <span>Elite Four Lorelei Lv. 73</span>
+<span>Sinnoh Leader Candice Lv. 74</span>
+
+            <span>Team Plasma Colress Lv. 75</span>
+          </div>
+        </li>
+        <li>
+          <a href="tate_and_liza_split.html">Tate &amp; Liza (90)</a>
+          <div class="split-cap-dropdown is-placeholder">
+            <span>No extra cap listed yet</span>
+          </div>
+        </li>
+        <li>
+          <a href="flannery_split.html">Crasher Wake &amp; Nessa (93)</a>
+          <div class="split-cap-dropdown is-placeholder">
+            <span>No extra cap listed yet</span>
+          </div>
+        </li>
+        <li>
+          <a href="elite_four_split.html">Elite Four (99)</a>
+          <div class="split-cap-dropdown is-placeholder">
+            <span>No extra cap listed yet</span>
+          </div>
+        </li>
+    </ul>
+  </div>
+
+  <table class="content-table">
+    <caption class="caption-content">Hex Maniac Tammy & Hex Maniac Cale</caption>
+    <tbody>
+      <tr> <!-- Images -->
+        <td><img src="https://play.pokemonshowdown.com/sprites/gen5/cresselia.png" alt=""></td>
+        <td><img src="https://play.pokemonshowdown.com/sprites/gen5/ursaluna-bloodmoon.png" alt=""></td>
+        <td><img src="https://play.pokemonshowdown.com/sprites/gen5/azumarill.png" alt=""></td>
+        <td><img src="https://play.pokemonshowdown.com/sprites/gen5/lycanroc-midnight.png" alt=""></td>
+        <td><img src="https://play.pokemonshowdown.com/sprites/gen5/gothitelle.png" alt=""></td>
+        <td><img src="https://play.pokemonshowdown.com/sprites/gen5/golurk-mega.png" alt=""></td>
+      </tr>
+
+      <tr> <!-- Species -->
+        <th>Cresselia</th>
+        <th>Ursaluna-Bloodmoon</th>
+        <th>Azumarill</th>
+        <th>Lycanroc-Midnight</th>
+        <th>Gothitelle</th>
+        <th>Golurk-Mega</th>
+      </tr>
+
+      <tr> <!-- Level -->
+        <td>77</td>
+        <td>78</td>
+        <td>77</td>
+        <td>77</td>
+        <td>77</td>
+        <td>78</td>
+      </tr>
+
+      <tr> <!-- Item -->
+        <td>Covert Cloak</td>
+        <td>Normal Gem</td>
+        <td>Life Orb</td>
+        <td>Bright Powder</td>
+        <td>Lum Berry</td>
+        <td>Golurkite</td>
+      </tr>
+
+      <tr> <!-- Ability -->
+        <td>Levitate</td>
+        <td>Mind's Eye</td>
+        <td>Huge Power</td>
+        <td>No Guard</td>
+        <td>Shadow Tag</td>
+        <td>Iron Fist</td>
+      </tr>
+
+      <tr> <!-- Nature -->
+        <td>Quiet</td>
+        <td>Sassy</td>
+        <td>Brave</td>
+        <td>Brave</td>
+        <td>Relaxed</td>
+        <td>Brave</td>
+      </tr>
+
+      <tr> <!-- Move 1 -->
+        <td>Trick Room</td>
+        <td>Blood Moon</td>
+        <td>Liquidation</td>
+        <td>Stone Edge</td>
+        <td>Trick Room</td>
+        <td>Phantom Force</td>
+      </tr>
+
+      <tr> <!-- Move 2 -->
+        <td>Psychic</td>
+        <td>Hyper Beam</td>
+        <td>Play Rough</td>
+        <td>Snarl</td>
+        <td>Fake Out</td>
+        <td>High Horsepower</td>
+      </tr>
+
+      <tr> <!-- Move 3 -->
+        <td>Lunar Blessing</td>
+        <td>Earth Power</td>
+        <td>Perish Song</td>
+        <td>Lash Out</td>
+        <td>Mystical Fire</td>
+        <td>Hammer Arm</td>
+      </tr>
+
+      <tr> <!-- Move 4 -->
+        <td>Helping Hand</td>
+        <td>Protect</td>
+        <td>Substitute</td>
+        <td>Bulk Up</td>
+        <td>Focus Blast</td>
+        <td>Ice Punch</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="content-table">
+    <caption class="caption-content">Beauty Jessica - Glalie's base ability is Intimidate and is PreDMG to 89%
+
+</caption>
+    <tbody>
+      <tr> <!-- Images -->
+        <td><img src="https://play.pokemonshowdown.com/sprites/gen5/gourgeist-super.png" alt=""></td>
+        <td><img src="https://play.pokemonshowdown.com/sprites/gen5/greedent.png" alt=""></td>
+        <td><img src="https://play.pokemonshowdown.com/sprites/gen5/ferrothorn.png" alt=""></td>
+        <td><img src="https://play.pokemonshowdown.com/sprites/gen5/glalie-mega.png" alt=""></td>
+        <td><img src="https://play.pokemonshowdown.com/sprites/gen5/enamorus-therian.png" alt=""></td>
+        <td><img src="https://play.pokemonshowdown.com/sprites/gen5/" alt=""></td>
+      </tr>
+
+      <tr> <!-- Species -->
+        <th>Gourgeist-Super</th>
+        <th>Greedent</th>
+        <th>Ferrothorn</th>
+        <th>Glalie-Mega</th>
+        <th>Enamorus-Therian</th>
+        <td></td>
+      </tr>
+
+      <tr> <!-- Level -->
+        <td>77</td>
+        <td>77</td>
+        <td>78</td>
+        <td>77</td>
+        <td>78</td>
+        <td></td>
+      </tr>
+
+      <tr> <!-- Item -->
+        <td>Occa Berry</td>
+        <td>Liechi Berry</td>
+        <td>Occa Berry</td>
+        <td>Glalitite</td>
+        <td>Weakness Policy</td>
+        <td></td>
+      </tr>
+
+      <tr> <!-- Ability -->
+        <td>Insomnia</td>
+        <td>Cheek Pouch</td>
+        <td>Stamina</td>
+        <td>Intimidate</td>
+        <td>Overcoat</td>
+        <td></td>
+      </tr>
+
+      <tr> <!-- Nature -->
+        <td>Sassy</td>
+        <td>Adamant</td>
+        <td>Sassy</td>
+        <td>Brave</td>
+        <td>Brave</td>
+        <td></td>
+      </tr>
+
+      <tr> <!-- Move 1 -->
+        <td>Trick Room</td>
+        <td>Swords Dance</td>
+        <td>Body Press</td>
+        <td>Explosion</td>
+        <td>Trick Room</td>
+        <td></td>
+      </tr>
+
+      <tr> <!-- Move 2 -->
+        <td>Power Whip</td>
+        <td>Psychic Fangs</td>
+        <td>Knock Off</td>
+        <td>Double-Edge</td>
+        <td>Mystical Fire</td>
+        <td></td>
+      </tr>
+
+      <tr> <!-- Move 3 -->
+        <td>Leech Seed</td>
+        <td>Double-Edge</td>
+        <td>Stealth Rock</td>
+        <td>Spikes</td>
+        <td>Moonblast</td>
+        <td></td>
+      </tr>
+
+      <tr> <!-- Move 4 -->
+        <td>Phantom Force</td>
+        <td>Earthquake</td>
+        <td>Amnesia</td>
+        <td>Earth Power</td>
+        <td>Razor Wind</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="content-table">
+<caption class="caption-content">Sr & Jr Kate & Joy</caption>
+<tbody>
+
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/annihilape.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/farigiraf.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/afd/scrafty-mega.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/arcanine.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/mimikyu.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Annihilape</th>
+  <th>Farigiraf</th>
+  <th>Scrafty-Mega</th>
+  <th>Arcanine</th>
+  <th>Mimikyu</th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>77</td>
+  <td>77</td>
+  <td>78</td>
+  <td>77</td>
+  <td>77</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Room Service</td>
+  <td>Sitrus Berry</td>
+  <td>Scraftinite</td>
+  <td>Life Orb</td>
+  <td>Room Service</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Defiant</td>
+  <td>Armor Tail</td>
+  <td>Justified</td>
+  <td>Justified</td>
+  <td>Disguise</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Brave</td>
+  <td>Relaxed</td>
+  <td>Sassy</td>
+  <td>Brave</td>
+  <td>Brave</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Protect</td>
+  <td>Beat Up</td>
+  <td>Super Fang</td>
+  <td>Extreme Speed</td>
+  <td>Trick Room</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Rage Fist</td>
+  <td>Hyper Voice</td>
+  <td>Fake Out</td>
+  <td>Frustration</td>
+  <td>Beat Up</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Cross Chop</td>
+  <td>Twin Beam</td>
+  <td>Knock Off</td>
+  <td>Superpower</td>
+  <td>Phantom Force</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Stone Edge</td>
+  <td>Trick Room</td>
+  <td>High Jump Kick</td>
+  <td>Flare Blitz</td>
+  <td>Play Rough</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+<table class="content-table">
+<caption class="caption-content">Pkmn Breeder Pat</caption>
+<tbody>
+
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/grimmsnarl.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tsareena.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/volcanion.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/ampharos.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/afd/malamar-mega.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Grimmsnarl</th>
+  <th>Tsareena</th>
+  <th>Volcanion</th>
+  <th>Ampharos</th>
+  <th>Malamar-Mega</th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>77</td>
+  <td>77</td>
+  <td>78</td>
+  <td>77</td>
+  <td>78</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Light Clay</td>
+  <td>Assault Vest</td>
+  <td>White Herb</td>
+  <td>Life Orb</td>
+  <td>Malamarite</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Prankster</td>
+  <td>Queenly Majesty</td>
+  <td>Water Absorb</td>
+  <td>Sheer Force</td>
+  <td>Sniper</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Impish</td>
+  <td>Brave</td>
+  <td>Quiet</td>
+  <td>Quiet</td>
+  <td>Brave</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Reflect</td>
+  <td>Zen Headbutt</td>
+  <td>Heat Wave</td>
+  <td>Power Gem</td>
+  <td>Psycho Boost</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Light Screen</td>
+  <td>Trop Kick</td>
+  <td>Steam Eruption</td>
+  <td>Fake Tears</td>
+  <td>Superpower</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Trick Room</td>
+  <td>Low Kick</td>
+  <td>Overheat</td>
+  <td>Thunderbolt</td>
+  <td>Night Daze</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Fake Tears</td>
+  <td>Triple Axel</td>
+  <td>Sludge Bomb</td>
+  <td>Flash Cannon</td>
+  <td>Destiny Bond</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+<table class="content-table">
+<caption class="caption-content">Pkmn Breeder Myles</caption>
+<tbody>
+
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/orbeetle.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/araquanid.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/ariados.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/spidops.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Orbeetle</th>
+  <th>Araquanid</th>
+  <th>Ariados</th>
+  <th>Spidops</th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>79</td>
+  <td>79</td>
+  <td>79</td>
+  <td>79</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Colbur Berry</td>
+  <td>Binding Band</td>
+  <td>Choice Band</td>
+  <td>Red Card</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Trace</td>
+  <td>Water Bubble</td>
+  <td>Shadow Tag</td>
+  <td>Stakeout</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Quiet</td>
+  <td>Relaxed</td>
+  <td>Brave</td>
+  <td>Brave</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Trick Room</td>
+  <td>Iron Defense</td>
+  <td>Megahorn</td>
+  <td>Retaliate</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Body Press</td>
+  <td>Liquidation</td>
+  <td></td>
+  <td>Lunge</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Infestation</td>
+  <td>Leech Life</td>
+  <td></td>
+  <td>Storm Throw</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Bug Buzz</td>
+  <td>Infestation</td>
+  <td></td>
+  <td>Spikes</td>
+  <td></td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+<table class="content-table">
+<caption class="caption-content">Gentleman Walter</caption>
+<tbody>
+
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/carbink.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/marowak-alola.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/rhyperior.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/aggron-mega.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Carbink</th>
+  <th>Marowak-Alola</th>
+  <th>Rhyperior</th>
+  <th>Aggron-Mega</th>
+  <th></th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>78</td>
+  <td>77</td>
+  <td>78</td>
+  <td>78</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Babiri Berry</td>
+  <td>Thick Club</td>
+  <td>Rindo Berry</td>
+  <td>Aggronite</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Clear Body</td>
+  <td>Rock Head</td>
+  <td>Solid Rock</td>
+  <td>Sturdy</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Relaxed</td>
+  <td>Brave</td>
+  <td>Brave</td>
+  <td>Brave</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Trick Room</td>
+  <td>Temper Flare</td>
+  <td>Swords Dance</td>
+  <td>Heavy Slam</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Body Press</td>
+  <td>Shadow Bone</td>
+  <td>Stone Edge</td>
+  <td>Body Press</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Endeavor</td>
+  <td>Head Smash</td>
+  <td>Earthquake</td>
+  <td>Dragon Claw</td>
+  <td></td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Stealth Rock</td>
+  <td>Brick Break</td>
+  <td>Ice Punch</td>
+  <td>Curse</td>
+  <td></td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+<table class="content-table">
+<caption class="caption-content">Pokefan Vanessa - Double Battle</caption>
+<tbody>
+
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/indeedee-f.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/porygon2.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/ursaluna.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/afd/scolipede-mega.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/armarouge.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Indeedee-F</th>
+  <th>Porygon2</th>
+  <th>Ursaluna</th>
+  <th>Scolipede-Mega</th>
+  <th>Armarouge</th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>77</td>
+  <td>78</td>
+  <td>77</td>
+  <td>78</td>
+  <td>77</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Terrain Extender</td>
+  <td>Eviolite</td>
+  <td>Flame Orb</td>
+  <td>Scolipite</td>
+  <td>Weakness Policy</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Psychic Surge</td>
+  <td>Download</td>
+  <td>Guts</td>
+  <td>Swarm</td>
+  <td>Mega Launcher</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Quiet</td>
+  <td>Quiet</td>
+  <td>Brave</td>
+  <td>Brave</td>
+  <td>Quiet</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Trick Room</td>
+  <td>Tri Attack</td>
+  <td>Facade</td>
+  <td>Swords Dance</td>
+  <td>Flamethrower</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Alluring Voice</td>
+  <td>Foul Play</td>
+  <td>High Horsepower</td>
+  <td>X-Scissor</td>
+  <td>Expanding Force</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Hyper Beam</td>
+  <td>Ice Beam</td>
+  <td>Knock Off</td>
+  <td>Poison Jab</td>
+  <td>Flash Cannon</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Expanding Force</td>
+  <td>Tri Attack</td>
+  <td>Curse</td>
+  <td>Pursuit</td>
+  <td>Mystical Fire</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+<table class="content-table">
+<caption class="caption-content">Cool Trainer Marcel</caption>
+<tbody>
+
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/corsola-galar.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/omastar.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/gogoat.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/cradily.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/tyranitar-mega.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Corsola-Galar</th>
+  <th>Omastar</th>
+  <th>Gogoat</th>
+  <th>Cradily</th>
+  <th>Tyranitar-Mega</th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>77</td>
+  <td>79</td>
+  <td>77</td>
+  <td>77</td>
+  <td>78</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Eviolite</td>
+  <td>Life Orb</td>
+  <td>Safety Goggles</td>
+  <td>Quick Claw</td>
+  <td>Tyranitarite</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Weak Armor</td>
+  <td>Shell Armor</td>
+  <td>Sap Sipper</td>
+  <td>Suction Cups</td>
+  <td>Sand Stream</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Relaxed</td>
+  <td>Quiet</td>
+  <td>Brave</td>
+  <td>Quiet</td>
+  <td>Brave</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Trick Room</td>
+  <td>Meteor Beam</td>
+  <td>Bulk Up</td>
+  <td>Meteor Beam</td>
+  <td>Protect</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Meteor Beam</td>
+  <td>Ice Beam</td>
+  <td>Horn Leech</td>
+  <td>Giga Drain</td>
+  <td>Knock Off</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Night Shade</td>
+  <td>Scald</td>
+  <td>Earthquake</td>
+  <td>Psychic</td>
+  <td>Rock Slide</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Sandstorm</td>
+  <td>Earth Power</td>
+  <td>Rock Slide</td>
+  <td>Recover</td>
+  <td>Fire Punch</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+<table class="content-table">
+<caption class="caption-content">Cool Trainer Cristin</caption>
+<tbody>
+
+<tr> <!-- Images -->
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/sableye.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/revavroom.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/appletun.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/hatterene.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/ironhands.png" alt=""></td>
+  <td><img src="https://play.pokemonshowdown.com/sprites/gen5/.png" alt=""></td>
+</tr>
+
+<tr> <!-- Species -->
+  <th>Sableye</th>
+  <th>Revavroom</th>
+  <th>Appletun</th>
+  <th>Hatterene</th>
+  <th>Iron Hands</th>
+  <th></th>
+</tr>
+
+<tr> <!-- Level -->
+  <td>77</td>
+  <td>78</td>
+  <td>78</td>
+  <td>77</td>
+  <td>78</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Item -->
+  <td>Leftovers</td>
+  <td>Shuca Berry</td>
+  <td>Iapapa Berry</td>
+  <td>Kebia Berry</td>
+  <td>Punching Glove</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Ability -->
+  <td>Prankster</td>
+  <td>Filter</td>
+  <td>Ripen</td>
+  <td>Magic Bounce</td>
+  <td>Quark Drive</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Nature -->
+  <td>Relaxed</td>
+  <td>Brave</td>
+  <td>Quiet</td>
+  <td>Quiet</td>
+  <td>Adamant</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 1 -->
+  <td>Trick Room</td>
+  <td>Spin Out</td>
+  <td>Apple Acid</td>
+  <td>Calm Mind</td>
+  <td>Substitute</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 2 -->
+  <td>Screech</td>
+  <td>Noxious Torque</td>
+  <td>Dragon Pulse</td>
+  <td>Psychic</td>
+  <td>Thunder Punch</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 3 -->
+  <td>Fake Tears</td>
+  <td>Blazing Torque</td>
+  <td>Leech Seed</td>
+  <td>Draining Kiss</td>
+  <td>Focus Punch</td>
+  <td></td>
+</tr>
+
+<tr> <!-- Move 4 -->
+  <td>Knock Off</td>
+  <td>High Horsepower</td>
+  <td>Recycle</td>
+  <td>Mystical Fire</td>
+  <td>Ice Punch</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+<script src="theme/split_item_sprites.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const select = document.getElementById('theme-select');
+  const root = document.documentElement;
+
+  if (!select) return;
+
+  // Sync dropdown with saved theme
+  const saved = localStorage.getItem('porydex-theme') || 'dark';
+  select.value = saved;
+
+  select.addEventListener('change', () => {
+    const theme = select.value;
+
+    root.classList.remove('dark-mode', 'theme-azure', 'theme-dex', 'theme-dark', 'theme-light');
+
+    if (theme === 'dark') {
+      root.classList.add('dark-mode');
+    } else if (theme === 'azure') {
+      root.classList.add('dark-mode', 'theme-azure');
+    } else if (theme === 'dex') {
+      root.classList.add('theme-dex');
+    }
+
+    localStorage.setItem('porydex-theme', theme);
+  });
+});
+</script>
+</html>
