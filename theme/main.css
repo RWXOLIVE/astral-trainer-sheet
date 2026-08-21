@@ -1150,3 +1150,7 @@ a.subtle:hover {
     max-width: 780px;
   }
 }
+
+.red-wormhole {
+  color: #ff4d4d;
+}
