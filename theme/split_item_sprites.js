@@ -340,8 +340,41 @@ function decorateSplitItemSprites() {
   });
 }
 
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', decorateSplitItemSprites);
-} else {
+function decorateTrainerNotes() {
+  document.querySelectorAll('.content-table[data-note]').forEach((table) => {
+    if (table.querySelector('.trainer-note')) return;
+
+    const noteText = table.dataset.note.trim();
+    const caption = table.querySelector('.caption-content');
+    if (!noteText || !caption) return;
+
+    const note = document.createElement('span');
+    note.className = 'trainer-note';
+
+    const marker = document.createElement('span');
+    marker.className = 'trainer-note-marker';
+    marker.textContent = '!';
+    marker.tabIndex = 0;
+    marker.setAttribute('role', 'img');
+    marker.setAttribute('aria-label', 'Trainer note');
+
+    const panel = document.createElement('span');
+    panel.className = 'trainer-note-panel';
+    panel.setAttribute('role', 'note');
+    panel.textContent = noteText;
+
+    note.append(marker, panel);
+    caption.append(note);
+  });
+}
+
+function decorateSplitTables() {
   decorateSplitItemSprites();
+  decorateTrainerNotes();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', decorateSplitTables);
+} else {
+  decorateSplitTables();
 }
